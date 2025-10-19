@@ -1,0 +1,65 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+[Aa][Rr][Mm]*/
+[Aa][Rr][Mm]64*/
+
+# Test results
+TestResult*/
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Entity Framework migrations cache
+Migrations/
+
+# Docker
+docker-compose.override.yml
+*.pid
+*.log
+*.tmp
+
+# User secrets
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/secrets.json
+
+# Rider IDE
+.idea/
+*.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# NuGet packages
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+
+# Redis / Testcontainers temp
+*.db
+testcontainers*
+container_data/
+
+# Logs
+*.log
+logs/
