@@ -1,29 +1,31 @@
 
-using System.Text.Json.Serialization;
 using CarsTradeAPI.Data;
-using CarsTradeAPI.Features.CarModelOperation.CarModelRepository;
-using FluentValidation;
-using MediatR;
-using Microsoft.EntityFrameworkCore;
-using Npgsql;
-using CarsTradeAPI.Features.CarInventoryOperation.CarInventoryRepository;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
-using CarsTradeAPI.Features.EmployeeOperation.EmployeeRepository;
-using CarsTradeAPI.Infrastructure.Services.GenerateTokenService;
-using Microsoft.AspNetCore.Identity;
 using CarsTradeAPI.Entities;
 using CarsTradeAPI.Features.BuyerOperation.BuyerRepository;
+using CarsTradeAPI.Features.CarInventoryOperation.CarInventoryRepository;
+using CarsTradeAPI.Features.CarModelOperation.CarModelRepository;
+using CarsTradeAPI.Features.EmployeeOperation.EmployeeRepository;
 using CarsTradeAPI.Features.OrdersOperation.OrdersRepository;
-using CarsTradeAPI.Infrastructure.Services.CarInventoryService;
-using Serilog;
-using CarsTradeAPI.Infrastructure.ValidationBehavior;
 using CarsTradeAPI.Infrastructure.ErrorHandlerMiddleware;
-using CarsTradeAPI.Infrastructure.Services.IdempotencyService;
 using CarsTradeAPI.Infrastructure.Services.CacheService;
-using System.Reflection;
 using CarsTradeAPI.Infrastructure.Services.CarEngineFuelService;
+using CarsTradeAPI.Infrastructure.Services.CarInventoryService;
+using CarsTradeAPI.Infrastructure.Services.GenerateTokenService;
+using CarsTradeAPI.Infrastructure.Services.IdempotencyService;
+using CarsTradeAPI.Infrastructure.ValidationBehavior;
+using FluentValidation;
+using MassTransit;
+using MediatR;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Npgsql;
+using Serilog;
+using System;
+using System.Reflection;
+using System.Text;
+using System.Text.Json.Serialization;
 
 
 namespace CarsTradeAPI
@@ -100,6 +102,36 @@ namespace CarsTradeAPI
                     options.InstanceName = "CarsTradeAPI_";
                 });
 
+
+                // Проверка окружения для тестов
+                string environment = builder.Environment.EnvironmentName;
+                Console.WriteLine($"Environment: {environment}");
+
+                if (!builder.Environment.IsEnvironment("Testing"))
+                {
+                    // MassTransit with RabbitMQ
+                    string rabbitMqHost = builder.Configuration["RabbitMQ:Host"] ?? "localhost";
+                    string rabbitUser = builder.Configuration["RabbitMQ:User"] ?? "guest";
+                    string rabbitPassword = builder.Configuration["RabbitMQ:Pass"] ?? "guest";
+
+                    builder.Services.AddMassTransit(x =>
+                    {
+                        x.UsingRabbitMq((context, cfg) =>
+                        {
+                            cfg.Host(rabbitMqHost, "/", h =>
+                            {
+                                h.Username(rabbitUser);
+                                h.Password(rabbitPassword);
+                            });
+                        });
+                    }); 
+                }
+                else
+                {
+                    Console.WriteLine("MassTransit отключён для тестов");
+                }
+
+                builder.Services.AddMassTransitHostedService();
 
                 // Repositories
                 builder.Services.AddScoped<ICarModelRepository, ImplementationCarModelRepository>();

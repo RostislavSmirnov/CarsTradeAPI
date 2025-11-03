@@ -7,7 +7,8 @@ using CarsTradeAPI.Infrastructure.ValidationBehavior;
 using CarsTradeAPI.Infrastructure.Services.IdempotencyService;
 using System.Text.Json;
 using CarsTradeAPI.Infrastructure.Services.CacheService;
-
+using MassTransit;
+using Contracts.Events;
 
 namespace CarsTradeAPI.Features.OrdersOperation.DeleteOrder
 {
@@ -18,18 +19,21 @@ namespace CarsTradeAPI.Features.OrdersOperation.DeleteOrder
         private readonly ILogger<DeleteOrderCommandHandler> _logger;
         private readonly IIdempotencyService _idempotencyService;
         private readonly ICacheService _cache;
+        public readonly IPublishEndpoint _publishEndpoint;
         public DeleteOrderCommandHandler(
             IMapper mapper,
             IOrderRepository orderRepository,
             ILogger<DeleteOrderCommandHandler> logger,
             IIdempotencyService idempotencyService,
-            ICacheService cache)
+            ICacheService cache,
+            IPublishEndpoint publishEndpoint)
         {
             _mapper = mapper;
             _orderRepository = orderRepository;
             _logger = logger;
             _idempotencyService = idempotencyService;
             _cache = cache;
+            _publishEndpoint = publishEndpoint;
         }
         
 
@@ -68,6 +72,10 @@ namespace CarsTradeAPI.Features.OrdersOperation.DeleteOrder
                 // Удаление из кэша
                 await _cache.RemoveAsync($"Order:{request.OrderId}");
                 await _cache.RemoveAsync("Order:all");
+
+                // Публикация события об удалении заказа
+                OrderDeleted evt = new OrderDeleted(deletedOrder.OrderId, deletedOrder.BuyerId, deletedOrder.OrderPrice, deletedOrder.OrderCreateDate);
+                await _publishEndpoint.Publish(evt);
 
                 _logger.LogInformation("Заказ с ID: {OrderId} успешно удален", request.OrderId);
                 return MbResult<ShowOrderDto>.Success(result);

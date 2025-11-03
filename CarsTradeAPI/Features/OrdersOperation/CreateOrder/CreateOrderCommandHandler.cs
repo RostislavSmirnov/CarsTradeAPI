@@ -8,6 +8,8 @@ using CarsTradeAPI.Infrastructure.ValidationBehavior;
 using CarsTradeAPI.Infrastructure.Services.IdempotencyService;
 using System.Text.Json;
 using CarsTradeAPI.Infrastructure.Services.CacheService;
+using Contracts.Events;
+using MassTransit;
 
 
 namespace CarsTradeAPI.Features.OrdersOperation.CreateOrder
@@ -20,13 +22,15 @@ namespace CarsTradeAPI.Features.OrdersOperation.CreateOrder
         private readonly ICarInventoryService _carInventoryService;
         private readonly IIdempotencyService _idempotencyService;
         private readonly ICacheService _cache;
+        private readonly IPublishEndpoint _publishEndpoint;
         public CreateOrderCommandHandler(
             IMapper mapper,
             IOrderRepository orderRepository,
             ILogger<CreateOrderCommandHandler> logger,
             ICarInventoryService carInventoryService,
             IIdempotencyService idempotencyService,
-            ICacheService cacheService)
+            ICacheService cacheService,
+            IPublishEndpoint publishEndpoint)
         {
             _mapper = mapper;
             _orderRepository = orderRepository;
@@ -34,6 +38,7 @@ namespace CarsTradeAPI.Features.OrdersOperation.CreateOrder
             _carInventoryService = carInventoryService;
             _idempotencyService = idempotencyService;
             _cache = cacheService;
+            _publishEndpoint = publishEndpoint;
         }
 
 
@@ -116,6 +121,10 @@ namespace CarsTradeAPI.Features.OrdersOperation.CreateOrder
                 await _idempotencyService.SaveAsync(request.IdempotencyKey, "Order", createdOrder.OrderId, json);
 
                 await _cache.RemoveAsync("Order:all");
+
+                // публикация события RabbitMq
+                OrderCreated evt = new OrderCreated(result.OrderId, result.BuyerId, result.OrderPrice, result.OrderCreateDate);
+                await _publishEndpoint.Publish(evt);
 
                 _logger.LogInformation("Заказ успешно создан с ID: {OrderId}", newOrder.OrderId);
                 return MbResult<ShowOrderDto>.Success(result);

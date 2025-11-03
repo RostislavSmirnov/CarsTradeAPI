@@ -32,6 +32,8 @@ namespace CarsTradeTests.IntegrationTests.TestData
 
         protected override void ConfigureWebHost(IWebHostBuilder builder)
         {
+            builder.UseEnvironment("Testing");
+
             builder.ConfigureServices(services =>
             {
                 Console.WriteLine("Настройка тестовых сервисов...");
@@ -84,6 +86,8 @@ namespace CarsTradeTests.IntegrationTests.TestData
                     Console.WriteLine($"CarsTradeDbContext #{Interlocked.Increment(ref _dbContextCount)} создан в {DateTime.UtcNow}");
                     return dbContext;
                 });
+
+                services.AddSingleton<MassTransit.IPublishEndpoint, FakePublishEndpoint>();
 
                 // 7 Применяем миграции при старте тестов
                 ServiceProvider sp = services.BuildServiceProvider();

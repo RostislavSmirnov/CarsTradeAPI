@@ -12,6 +12,20 @@ services:
       - carstradeapi_database
       - carstradeapi_redis
 
+  carstradeworker:
+    image: ${DOCKER_REGISTRY-}carstradeworker
+    container_name: CarsTradeWorker
+    build:
+      context: .
+      dockerfile: CarsTradeWorker/Dockerfile
+    depends_on:
+      - carstradeapi_database
+      - carstradeapi_rabbitmq
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings_DefaultConnection: "Host=carstradeapi_database;Database=CarsTrade;Username=postgres;Password=mototaz12"
+      RabbitMq__Host: "carstradeapi_rabbitmq"
+
   carstradeapi_database:
     image: postgres:latest
     container_name: carstradeapiDatabase
@@ -40,5 +54,20 @@ services:
       timeout: 10s
       retries: 3
 
+  carstradeapi_rabbitmq:
+    image: rabbitmq:3.12-management
+    container_name: carstradeapi_rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      
 volumes:
   postgres_data:

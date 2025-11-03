@@ -1,0 +1,1648 @@
+2025-11-01 16:58:52.520 +00:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-01 16:58:53.134 +00:00 [DBG] Entity Framework Core 8.0.7 initialized 'CarsTradeDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2025-11-01 16:58:53.146 +00:00 [DBG] Creating DbConnection.
+2025-11-01 16:58:53.149 +00:00 [DBG] Created DbConnection. (2ms).
+2025-11-01 16:58:53.159 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:53.193 +00:00 [DBG] 'CarsTradeDbContext' disposed.
+2025-11-01 16:58:53.195 +00:00 [DBG] Disposing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:53.198 +00:00 [DBG] Disposed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 16:58:53.246 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-01 16:58:53.355 +00:00 [DBG] Hosting starting
+2025-11-01 16:58:53.428 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:53.430 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:53.438 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (7ms).
+2025-11-01 16:58:53.443 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-11-01 16:58:53.444 +00:00 [DBG] Creating DbConnection.
+2025-11-01 16:58:53.444 +00:00 [DBG] Created DbConnection. (0ms).
+2025-11-01 16:58:53.459 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (3ms).
+2025-11-01 16:58:53.470 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (17ms).
+2025-11-01 16:58:53.470 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:53.483 +00:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-11-01 16:58:53.504 +00:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-11-01 16:58:53.652 +00:00 [DBG] Starting bus instances: IBus
+2025-11-01 16:58:53.654 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:53.655 +00:00 [DBG] Starting bus: "rabbitmq://carstradeapi_rabbitmq/"
+2025-11-01 16:58:53.659 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 16:58:53.674 +00:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2025-11-01 16:58:53.675 +00:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2025-11-01 16:58:53.679 +00:00 [INF] Creating key {1472efee-0ca5-4331-a98f-3df12bc4a71b} with creation date 2025-11-01 16:58:53Z, activation date 2025-11-01 16:58:53Z, and expiration date 2026-01-30 16:58:53Z.
+2025-11-01 16:58:53.750 +00:00 [DBG] Connect: guest@carstradeapi_rabbitmq:5672/
+2025-11-01 16:58:53.752 +00:00 [DBG] Descriptor deserializer type for key {1472efee-0ca5-4331-a98f-3df12bc4a71b} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2025-11-01 16:58:53.757 +00:00 [DBG] No key escrow sink found. Not writing key {1472efee-0ca5-4331-a98f-3df12bc4a71b} to escrow.
+2025-11-01 16:58:53.757 +00:00 [WRN] No XML encryptor configured. Key {1472efee-0ca5-4331-a98f-3df12bc4a71b} may be persisted to storage in unencrypted form.
+2025-11-01 16:58:53.759 +00:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2025-11-01 16:58:53.761 +00:00 [DBG] Found key {1472efee-0ca5-4331-a98f-3df12bc4a71b}.
+2025-11-01 16:58:53.826 +00:00 [DBG] Considering key {1472efee-0ca5-4331-a98f-3df12bc4a71b} with expiration date 2026-01-30 16:58:53Z as default key.
+2025-11-01 16:58:53.841 +00:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-11-01 16:58:53.845 +00:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-11-01 16:58:53.845 +00:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-11-01 16:58:53.848 +00:00 [DBG] Using key {1472efee-0ca5-4331-a98f-3df12bc4a71b} as the default key.
+2025-11-01 16:58:53.850 +00:00 [DBG] Key ring with default key {1472efee-0ca5-4331-a98f-3df12bc4a71b} was loaded during application startup.
+2025-11-01 16:58:53.850 +00:00 [INF] Executed DbCommand (188ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 16:58:53.854 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:53.857 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (2ms).
+2025-11-01 16:58:53.882 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:53.882 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:53.883 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 16:58:53.883 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 16:58:53.883 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 16:58:53.884 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-01 16:58:53.913 +00:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-01 16:58:53.954 +00:00 [DBG] Connected: guest@carstradeapi_rabbitmq:5672/ (address: amqp://carstradeapi_rabbitmq:5672, local: 57652)
+2025-11-01 16:58:53.955 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:53.956 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 39ms reading results.
+2025-11-01 16:58:53.956 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:53.957 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 16:58:53.966 +00:00 [DBG] Migrating using database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:53.967 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.028 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.029 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.058 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (28ms).
+2025-11-01 16:58:54.090 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-11-01 16:58:54.097 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (6ms).
+2025-11-01 16:58:54.097 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (6ms).
+2025-11-01 16:58:54.098 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.098 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.098 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 16:58:54.102 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 16:58:54.123 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.135 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (11ms).
+2025-11-01 16:58:54.136 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.184 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.185 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.185 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 16:58:54.186 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-11-01 16:58:54.186 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-11-01 16:58:54.186 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-11-01 16:58:54.187 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.187 +00:00 [DBG] Endpoint Ready: "rabbitmq://carstradeapi_rabbitmq/5a89c9e17e4c_CarsTradeAPI_bus_ccyyyyr8anijfugqbdxb139oy5?temporary=true"
+2025-11-01 16:58:54.187 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.187 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 16:58:54.190 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 16:58:54.190 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.191 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 16:58:54.191 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.191 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.192 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 16:58:54.192 +00:00 [INF] Bus started: "rabbitmq://carstradeapi_rabbitmq/"
+2025-11-01 16:58:54.192 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 16:58:54.192 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 16:58:54.193 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-01 16:58:54.195 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-01 16:58:54.195 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.196 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 16:58:54.196 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 16:58:54.196 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 16:58:54.207 +00:00 [INF] No migrations were applied. The database is already up to date.
+2025-11-01 16:58:54.218 +00:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 2AE5B9E8B7B0EDFD86FD709A56EA7C92E2569E52)
+2025-11-01 16:58:54.416 +00:00 [INF] Now listening on: http://[::]:8080
+2025-11-01 16:58:54.416 +00:00 [INF] Now listening on: https://[::]:8081
+2025-11-01 16:58:54.417 +00:00 [DBG] Loaded hosting startup assembly CarsTradeAPI
+2025-11-01 16:58:54.417 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-01 16:58:54.418 +00:00 [INF] Hosting environment: Development
+2025-11-01 16:58:54.418 +00:00 [INF] Content root path: /app
+2025-11-01 16:58:54.418 +00:00 [DBG] Hosting started
+2025-11-01 16:58:55.311 +00:00 [DBG] Connection id "0HNGPCVOK2NFM" accepted.
+2025-11-01 16:58:55.312 +00:00 [DBG] Connection id "0HNGPCVOK2NFM" started.
+2025-11-01 16:58:55.337 +00:00 [DBG] Connection 0HNGPCVOK2NFM established using the following protocol: "Tls13"
+2025-11-01 16:58:55.384 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/swagger - null null
+2025-11-01 16:58:55.386 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-01 16:58:55.399 +00:00 [DBG] No candidates found for the request path '/swagger'
+2025-11-01 16:58:55.399 +00:00 [DBG] Request did not match any endpoints
+2025-11-01 16:58:55.447 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/swagger - 301 0 null 63.4523ms
+2025-11-01 16:58:55.475 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/swagger/index.html - null null
+2025-11-01 16:58:55.475 +00:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-11-01 16:58:55.476 +00:00 [DBG] Request did not match any endpoints
+2025-11-01 16:58:55.542 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/swagger/index.html - 200 null text/html;charset=utf-8 67.2691ms
+2025-11-01 16:58:55.568 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/swagger/swagger-ui.css - null null
+2025-11-01 16:58:55.568 +00:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2025-11-01 16:58:55.568 +00:00 [DBG] Request did not match any endpoints
+2025-11-01 16:58:55.570 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/swagger/swagger-ui-standalone-preset.js - null null
+2025-11-01 16:58:55.570 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/swagger/swagger-ui-bundle.js - null null
+2025-11-01 16:58:55.572 +00:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-11-01 16:58:55.572 +00:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2025-11-01 16:58:55.572 +00:00 [DBG] Request did not match any endpoints
+2025-11-01 16:58:55.576 +00:00 [DBG] Request did not match any endpoints
+2025-11-01 16:58:55.612 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-11-01 16:58:55.613 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/swagger/swagger-ui.css - 200 152034 text/css 45.91ms
+2025-11-01 16:58:55.615 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-11-01 16:58:55.616 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 46.2409ms
+2025-11-01 16:58:55.660 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-11-01 16:58:55.660 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 91.0406ms
+2025-11-01 16:58:55.754 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - null null
+2025-11-01 16:58:55.775 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-01 16:58:55.776 +00:00 [DBG] Request did not match any endpoints
+2025-11-01 16:58:55.930 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 175.7555ms
+2025-11-01 17:05:12.048 +00:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-01 17:05:12.463 +00:00 [DBG] Entity Framework Core 8.0.7 initialized 'CarsTradeDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2025-11-01 17:05:12.470 +00:00 [DBG] Creating DbConnection.
+2025-11-01 17:05:12.473 +00:00 [DBG] Created DbConnection. (1ms).
+2025-11-01 17:05:12.481 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.499 +00:00 [DBG] 'CarsTradeDbContext' disposed.
+2025-11-01 17:05:12.500 +00:00 [DBG] Disposing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.503 +00:00 [DBG] Disposed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:05:12.522 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-01 17:05:12.541 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.543 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.549 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (5ms).
+2025-11-01 17:05:12.553 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-11-01 17:05:12.553 +00:00 [DBG] Creating DbConnection.
+2025-11-01 17:05:12.554 +00:00 [DBG] Created DbConnection. (0ms).
+2025-11-01 17:05:12.558 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (3ms).
+2025-11-01 17:05:12.559 +00:00 [DBG] Hosting starting
+2025-11-01 17:05:12.559 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (6ms).
+2025-11-01 17:05:12.559 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.574 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.579 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 17:05:12.621 +00:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 17:05:12.622 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.623 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (1ms).
+2025-11-01 17:05:12.625 +00:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-11-01 17:05:12.626 +00:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-11-01 17:05:12.631 +00:00 [DBG] Starting bus instances: IBus
+2025-11-01 17:05:12.632 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.632 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.632 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:05:12.633 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:05:12.633 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:05:12.633 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-01 17:05:12.635 +00:00 [DBG] Starting bus: "rabbitmq://carstradeapi_rabbitmq/"
+2025-11-01 17:05:12.637 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-01 17:05:12.643 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.644 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 6ms reading results.
+2025-11-01 17:05:12.645 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.645 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:05:12.647 +00:00 [DBG] Migrating using database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.648 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.651 +00:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2025-11-01 17:05:12.652 +00:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2025-11-01 17:05:12.654 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.654 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.655 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:05:12.654 +00:00 [INF] Creating key {81397d7f-c8e9-4673-83c7-c351994eeed5} with creation date 2025-11-01 17:05:12Z, activation date 2025-11-01 17:05:12Z, and expiration date 2026-01-30 17:05:12Z.
+2025-11-01 17:05:12.655 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-11-01 17:05:12.656 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-11-01 17:05:12.656 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-11-01 17:05:12.656 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.657 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.657 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 17:05:12.658 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 17:05:12.659 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.659 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:05:12.660 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.661 +00:00 [DBG] Descriptor deserializer type for key {81397d7f-c8e9-4673-83c7-c351994eeed5} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2025-11-01 17:05:12.661 +00:00 [DBG] Connect: guest@carstradeapi_rabbitmq:5672/
+2025-11-01 17:05:12.663 +00:00 [DBG] No key escrow sink found. Not writing key {81397d7f-c8e9-4673-83c7-c351994eeed5} to escrow.
+2025-11-01 17:05:12.663 +00:00 [WRN] No XML encryptor configured. Key {81397d7f-c8e9-4673-83c7-c351994eeed5} may be persisted to storage in unencrypted form.
+2025-11-01 17:05:12.664 +00:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2025-11-01 17:05:12.665 +00:00 [DBG] Found key {81397d7f-c8e9-4673-83c7-c351994eeed5}.
+2025-11-01 17:05:12.666 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.666 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.666 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:05:12.666 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-11-01 17:05:12.667 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-11-01 17:05:12.667 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-11-01 17:05:12.667 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.668 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.668 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 17:05:12.669 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 17:05:12.669 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.669 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:05:12.670 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.670 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.670 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:05:12.670 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:05:12.671 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:05:12.671 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-01 17:05:12.671 +00:00 [DBG] Considering key {81397d7f-c8e9-4673-83c7-c351994eeed5} with expiration date 2026-01-30 17:05:12Z as default key.
+2025-11-01 17:05:12.672 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-01 17:05:12.672 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.672 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 17:05:12.673 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:05:12.673 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:05:12.674 +00:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-11-01 17:05:12.677 +00:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-11-01 17:05:12.677 +00:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-11-01 17:05:12.679 +00:00 [DBG] Using key {81397d7f-c8e9-4673-83c7-c351994eeed5} as the default key.
+2025-11-01 17:05:12.680 +00:00 [DBG] Key ring with default key {81397d7f-c8e9-4673-83c7-c351994eeed5} was loaded during application startup.
+2025-11-01 17:05:12.681 +00:00 [INF] No migrations were applied. The database is already up to date.
+2025-11-01 17:05:12.708 +00:00 [DBG] Connected: guest@carstradeapi_rabbitmq:5672/ (address: amqp://carstradeapi_rabbitmq:5672, local: 52544)
+2025-11-01 17:05:12.722 +00:00 [DBG] Endpoint Ready: "rabbitmq://carstradeapi_rabbitmq/5a89c9e17e4c_CarsTradeAPI_bus_7wyyyyr8anijfnizbdxb14g1y6?temporary=true"
+2025-11-01 17:05:12.724 +00:00 [INF] Bus started: "rabbitmq://carstradeapi_rabbitmq/"
+2025-11-01 17:05:12.733 +00:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 2AE5B9E8B7B0EDFD86FD709A56EA7C92E2569E52)
+2025-11-01 17:05:12.860 +00:00 [INF] Now listening on: http://[::]:8080
+2025-11-01 17:05:12.860 +00:00 [INF] Now listening on: https://[::]:8081
+2025-11-01 17:05:12.860 +00:00 [DBG] Loaded hosting startup assembly CarsTradeAPI
+2025-11-01 17:05:12.860 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-01 17:05:12.861 +00:00 [INF] Hosting environment: Development
+2025-11-01 17:05:12.861 +00:00 [INF] Content root path: /app
+2025-11-01 17:05:12.861 +00:00 [DBG] Hosting started
+2025-11-01 17:05:13.048 +00:00 [DBG] Connection id "0HNGPD396F4CE" accepted.
+2025-11-01 17:05:13.049 +00:00 [DBG] Connection id "0HNGPD396F4CE" started.
+2025-11-01 17:05:13.066 +00:00 [DBG] Connection 0HNGPD396F4CE established using the following protocol: "Tls13"
+2025-11-01 17:05:13.093 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/swagger/index.html - null null
+2025-11-01 17:05:13.095 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-01 17:05:13.106 +00:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-11-01 17:05:13.107 +00:00 [DBG] Request did not match any endpoints
+2025-11-01 17:05:13.181 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/swagger/index.html - 200 null text/html;charset=utf-8 88.8354ms
+2025-11-01 17:05:13.323 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - null null
+2025-11-01 17:05:13.324 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-01 17:05:13.324 +00:00 [DBG] Request did not match any endpoints
+2025-11-01 17:05:13.440 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 116.8241ms
+2025-11-01 17:05:24.493 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/swagger/index.html - null null
+2025-11-01 17:05:24.493 +00:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-11-01 17:05:24.493 +00:00 [DBG] Request did not match any endpoints
+2025-11-01 17:05:24.495 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/swagger/index.html - 200 null text/html;charset=utf-8 1.889ms
+2025-11-01 17:05:24.548 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - null null
+2025-11-01 17:05:24.548 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-01 17:05:24.548 +00:00 [DBG] Request did not match any endpoints
+2025-11-01 17:05:24.549 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/swagger/favicon-32x32.png - null null
+2025-11-01 17:05:24.549 +00:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2025-11-01 17:05:24.549 +00:00 [DBG] Request did not match any endpoints
+2025-11-01 17:05:24.555 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-11-01 17:05:24.555 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/swagger/favicon-32x32.png - 200 628 image/png 6.1437ms
+2025-11-01 17:05:24.623 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.0582ms
+2025-11-01 17:12:08.801 +00:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-01 17:12:09.226 +00:00 [DBG] Entity Framework Core 8.0.7 initialized 'CarsTradeDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2025-11-01 17:12:09.234 +00:00 [DBG] Creating DbConnection.
+2025-11-01 17:12:09.237 +00:00 [DBG] Created DbConnection. (1ms).
+2025-11-01 17:12:09.246 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.263 +00:00 [DBG] 'CarsTradeDbContext' disposed.
+2025-11-01 17:12:09.264 +00:00 [DBG] Disposing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.267 +00:00 [DBG] Disposed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:12:09.285 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-01 17:12:09.310 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.312 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.318 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (5ms).
+2025-11-01 17:12:09.319 +00:00 [DBG] Hosting starting
+2025-11-01 17:12:09.323 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-11-01 17:12:09.324 +00:00 [DBG] Creating DbConnection.
+2025-11-01 17:12:09.324 +00:00 [DBG] Created DbConnection. (0ms).
+2025-11-01 17:12:09.328 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (3ms).
+2025-11-01 17:12:09.329 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (6ms).
+2025-11-01 17:12:09.329 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.344 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.349 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 17:12:09.386 +00:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-11-01 17:12:09.386 +00:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-11-01 17:12:09.390 +00:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 17:12:09.392 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.393 +00:00 [DBG] Starting bus instances: IBus
+2025-11-01 17:12:09.393 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (1ms).
+2025-11-01 17:12:09.396 +00:00 [DBG] Starting bus: "rabbitmq://carstradeapi_rabbitmq/"
+2025-11-01 17:12:09.404 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.404 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.405 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:12:09.405 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:12:09.406 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:12:09.406 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-01 17:12:09.411 +00:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-01 17:12:09.413 +00:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2025-11-01 17:12:09.413 +00:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2025-11-01 17:12:09.416 +00:00 [INF] Creating key {6df20d65-1b59-47c7-94fc-09ca935ea610} with creation date 2025-11-01 17:12:09Z, activation date 2025-11-01 17:12:09Z, and expiration date 2026-01-30 17:12:09Z.
+2025-11-01 17:12:09.419 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.419 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 7ms reading results.
+2025-11-01 17:12:09.420 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.420 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:12:09.421 +00:00 [DBG] Descriptor deserializer type for key {6df20d65-1b59-47c7-94fc-09ca935ea610} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2025-11-01 17:12:09.423 +00:00 [DBG] Connect: guest@carstradeapi_rabbitmq:5672/
+2025-11-01 17:12:09.423 +00:00 [DBG] Migrating using database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.424 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.424 +00:00 [DBG] No key escrow sink found. Not writing key {6df20d65-1b59-47c7-94fc-09ca935ea610} to escrow.
+2025-11-01 17:12:09.425 +00:00 [WRN] No XML encryptor configured. Key {6df20d65-1b59-47c7-94fc-09ca935ea610} may be persisted to storage in unencrypted form.
+2025-11-01 17:12:09.425 +00:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2025-11-01 17:12:09.426 +00:00 [DBG] Found key {6df20d65-1b59-47c7-94fc-09ca935ea610}.
+2025-11-01 17:12:09.430 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.430 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.431 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (1ms).
+2025-11-01 17:12:09.432 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-11-01 17:12:09.432 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-11-01 17:12:09.432 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-11-01 17:12:09.433 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.433 +00:00 [DBG] Considering key {6df20d65-1b59-47c7-94fc-09ca935ea610} with expiration date 2026-01-30 17:12:09Z as default key.
+2025-11-01 17:12:09.433 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.434 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 17:12:09.435 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 17:12:09.436 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.436 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:12:09.437 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.437 +00:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-11-01 17:12:09.439 +00:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-11-01 17:12:09.440 +00:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-11-01 17:12:09.442 +00:00 [DBG] Using key {6df20d65-1b59-47c7-94fc-09ca935ea610} as the default key.
+2025-11-01 17:12:09.442 +00:00 [DBG] Key ring with default key {6df20d65-1b59-47c7-94fc-09ca935ea610} was loaded during application startup.
+2025-11-01 17:12:09.443 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.443 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.444 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:12:09.444 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-11-01 17:12:09.444 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-11-01 17:12:09.444 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-11-01 17:12:09.445 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.445 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.446 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 17:12:09.447 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-11-01 17:12:09.447 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.447 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:12:09.448 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.448 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.448 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:12:09.449 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:12:09.449 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:12:09.450 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-01 17:12:09.452 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-01 17:12:09.452 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.453 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 17:12:09.453 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:09.453 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:12:09.463 +00:00 [INF] No migrations were applied. The database is already up to date.
+2025-11-01 17:12:09.478 +00:00 [DBG] Connected: guest@carstradeapi_rabbitmq:5672/ (address: amqp://carstradeapi_rabbitmq:5672, local: 57708)
+2025-11-01 17:12:09.493 +00:00 [DBG] Endpoint Ready: "rabbitmq://carstradeapi_rabbitmq/5a89c9e17e4c_CarsTradeAPI_bus_poyoyyr8anijrcxxbdxb14qkr8?temporary=true"
+2025-11-01 17:12:09.496 +00:00 [INF] Bus started: "rabbitmq://carstradeapi_rabbitmq/"
+2025-11-01 17:12:09.504 +00:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 2AE5B9E8B7B0EDFD86FD709A56EA7C92E2569E52)
+2025-11-01 17:12:09.623 +00:00 [INF] Now listening on: http://[::]:8080
+2025-11-01 17:12:09.623 +00:00 [INF] Now listening on: https://[::]:8081
+2025-11-01 17:12:09.623 +00:00 [DBG] Loaded hosting startup assembly CarsTradeAPI
+2025-11-01 17:12:09.624 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-01 17:12:09.624 +00:00 [INF] Hosting environment: Development
+2025-11-01 17:12:09.624 +00:00 [INF] Content root path: /app
+2025-11-01 17:12:09.625 +00:00 [DBG] Hosting started
+2025-11-01 17:12:10.015 +00:00 [DBG] Connection id "0HNGPD75EVCJK" accepted.
+2025-11-01 17:12:10.016 +00:00 [DBG] Connection id "0HNGPD75EVCJK" started.
+2025-11-01 17:12:10.032 +00:00 [DBG] Connection 0HNGPD75EVCJK established using the following protocol: "Tls13"
+2025-11-01 17:12:10.056 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/swagger/index.html - null null
+2025-11-01 17:12:10.058 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-01 17:12:10.070 +00:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-11-01 17:12:10.070 +00:00 [DBG] Request did not match any endpoints
+2025-11-01 17:12:10.159 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/swagger/index.html - 200 null text/html;charset=utf-8 103.9538ms
+2025-11-01 17:12:10.225 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - null null
+2025-11-01 17:12:10.227 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-01 17:12:10.227 +00:00 [DBG] Request did not match any endpoints
+2025-11-01 17:12:10.366 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 140.7118ms
+2025-11-01 17:12:34.471 +00:00 [INF] Request starting HTTP/2 POST https://localhost:8081/api/EmployeeAuthentication/Authenticate - application/json 47
+2025-11-01 17:12:34.475 +00:00 [DBG] 1 candidate(s) found for the request path '/api/EmployeeAuthentication/Authenticate'
+2025-11-01 17:12:34.478 +00:00 [DBG] Endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)' with route pattern 'api/EmployeeAuthentication/Authenticate' is valid for the request path '/api/EmployeeAuthentication/Authenticate'
+2025-11-01 17:12:34.479 +00:00 [DBG] Request matched endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:12:34.480 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-01 17:12:35.202 +00:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-11-01 17:12:35.203 +00:00 [INF] Executing endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:12:35.216 +00:00 [INF] Route matched with {action = "Authenticate", controller = "EmployeeAuthentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarsTradeAPI.Features.EmployeeOperation.EmployeeDto.AuthResultDto]] Authenticate(CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand) on controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI).
+2025-11-01 17:12:35.217 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-01 17:12:35.218 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-01 17:12:35.218 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-01 17:12:35.219 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-01 17:12:35.219 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-01 17:12:35.220 +00:00 [DBG] Executing controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI)
+2025-11-01 17:12:35.222 +00:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-11-01 17:12:35.222 +00:00 [DBG] Executed controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI)
+2025-11-01 17:12:35.226 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' ...
+2025-11-01 17:12:35.228 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' using the name '' in request data ...
+2025-11-01 17:12:35.229 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-01 17:12:35.248 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:00000005": started reading request body.
+2025-11-01 17:12:35.248 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:00000005": done reading request body.
+2025-11-01 17:12:35.255 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'
+2025-11-01 17:12:35.255 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:12:35.256 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:12:35.256 +00:00 [DBG] Attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' ...
+2025-11-01 17:12:35.260 +00:00 [DBG] Done attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:12:35.262 +00:00 [INF] Начало обработки запроса аутентификации сотрудника
+2025-11-01 17:12:35.346 +00:00 [INF] Начало обработки команды EmployeeAuthenticationCommand
+2025-11-01 17:12:35.347 +00:00 [INF] Этап получения сотрудника по логину string в репозитории
+2025-11-01 17:12:35.369 +00:00 [DBG] Entity Framework Core 8.0.7 initialized 'CarsTradeDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2025-11-01 17:12:35.385 +00:00 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .FirstOrDefault(x => x.EmployeeLogin == __login_0)'
+2025-11-01 17:12:35.482 +00:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Employee>(
+    asyncEnumerable: new SingleQueryingEnumerable<Employee>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.EmployeeId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.EmployeeAge (uint) Required, 1], [Property: Employee.EmployeeLogin (string) Required Index, 2], [Property: Employee.EmployeeMiddlename (string) Required, 3], [Property: Employee.EmployeeName (string) Required, 4], [Property: Employee.EmployeePassword (string) Required MaxLength(260), 5], [Property: Employee.EmployeeRole (string) Required, 6], [Property: Employee.EmployeeSellCounter (uint?), 7], [Property: Employee.EmployeeSurname (string) Required, 8] }
+            SELECT TOP(1) e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+            FROM Employees AS e
+            WHERE e.employee_login == @__login_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+        CarsTradeAPI.Data.CarsTradeDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-11-01 17:12:35.499 +00:00 [DBG] Creating DbConnection.
+2025-11-01 17:12:35.499 +00:00 [DBG] Created DbConnection. (0ms).
+2025-11-01 17:12:35.500 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:35.500 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:35.500 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:12:35.501 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:12:35.503 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-11-01 17:12:35.504 +00:00 [DBG] Executing DbCommand [Parameters=[@__login_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__login_0
+LIMIT 1
+2025-11-01 17:12:35.513 +00:00 [INF] Executed DbCommand (10ms) [Parameters=[@__login_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__login_0
+LIMIT 1
+2025-11-01 17:12:35.515 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:35.516 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 1ms reading results.
+2025-11-01 17:12:35.516 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:35.516 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:12:35.517 +00:00 [WRN] Попытка получить несуществующего пользователя с логином: string
+2025-11-01 17:12:35.517 +00:00 [WRN] Попытка входа с несуществующим логином: string
+2025-11-01 17:12:35.521 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-01 17:12:35.522 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-11-01 17:12:35.523 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-11-01 17:12:35.523 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-01 17:12:35.524 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-01 17:12:35.524 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-01 17:12:35.525 +00:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarsTradeAPI.Infrastructure.ValidationBehavior.ErrorDetail, CarsTradeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-01 17:12:35.538 +00:00 [INF] Executed action CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI) in 316.9414ms
+2025-11-01 17:12:35.538 +00:00 [INF] Executed endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:12:35.539 +00:00 [DBG] 'CarsTradeDbContext' disposed.
+2025-11-01 17:12:35.541 +00:00 [DBG] Disposing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:35.541 +00:00 [DBG] Disposed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:12:35.542 +00:00 [INF] Request finished HTTP/2 POST https://localhost:8081/api/EmployeeAuthentication/Authenticate - 404 null application/json; charset=utf-8 1071.216ms
+2025-11-01 17:12:44.113 +00:00 [INF] Request starting HTTP/2 POST https://localhost:8081/api/EmployeeAuthentication/Authenticate - application/json 55
+2025-11-01 17:12:44.114 +00:00 [DBG] 1 candidate(s) found for the request path '/api/EmployeeAuthentication/Authenticate'
+2025-11-01 17:12:44.115 +00:00 [DBG] Endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)' with route pattern 'api/EmployeeAuthentication/Authenticate' is valid for the request path '/api/EmployeeAuthentication/Authenticate'
+2025-11-01 17:12:44.115 +00:00 [DBG] Request matched endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:12:44.115 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-01 17:12:44.116 +00:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-11-01 17:12:44.117 +00:00 [INF] Executing endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:12:44.117 +00:00 [INF] Route matched with {action = "Authenticate", controller = "EmployeeAuthentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarsTradeAPI.Features.EmployeeOperation.EmployeeDto.AuthResultDto]] Authenticate(CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand) on controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI).
+2025-11-01 17:12:44.117 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-01 17:12:44.118 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-01 17:12:44.118 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-01 17:12:44.118 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-01 17:12:44.119 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-01 17:12:44.119 +00:00 [DBG] Executing controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI)
+2025-11-01 17:12:44.119 +00:00 [DBG] Executed controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI)
+2025-11-01 17:12:44.120 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' ...
+2025-11-01 17:12:44.121 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' using the name '' in request data ...
+2025-11-01 17:12:44.122 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-01 17:12:44.122 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:00000007": started reading request body.
+2025-11-01 17:12:44.122 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:00000007": done reading request body.
+2025-11-01 17:12:44.123 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'
+2025-11-01 17:12:44.123 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:12:44.123 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:12:44.123 +00:00 [DBG] Attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' ...
+2025-11-01 17:12:44.124 +00:00 [DBG] Done attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:12:44.124 +00:00 [INF] Начало обработки запроса аутентификации сотрудника
+2025-11-01 17:12:44.126 +00:00 [INF] Начало обработки команды EmployeeAuthenticationCommand
+2025-11-01 17:12:44.126 +00:00 [INF] Этап получения сотрудника по логину TestAdmin1 в репозитории
+2025-11-01 17:12:44.156 +00:00 [DBG] Entity Framework Core 8.0.7 initialized 'CarsTradeDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2025-11-01 17:12:44.158 +00:00 [DBG] Creating DbConnection.
+2025-11-01 17:12:44.158 +00:00 [DBG] Created DbConnection. (0ms).
+2025-11-01 17:12:44.159 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:44.159 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:44.159 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:12:44.160 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:12:44.160 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:12:44.160 +00:00 [DBG] Executing DbCommand [Parameters=[@__login_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__login_0
+LIMIT 1
+2025-11-01 17:12:44.162 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__login_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__login_0
+LIMIT 1
+2025-11-01 17:12:44.162 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:44.162 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 17:12:44.162 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:44.163 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:12:44.163 +00:00 [WRN] Попытка получить несуществующего пользователя с логином: TestAdmin1
+2025-11-01 17:12:44.163 +00:00 [WRN] Попытка входа с несуществующим логином: TestAdmin1
+2025-11-01 17:12:44.164 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-01 17:12:44.164 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-11-01 17:12:44.164 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-11-01 17:12:44.164 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-01 17:12:44.165 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-01 17:12:44.165 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-01 17:12:44.165 +00:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarsTradeAPI.Infrastructure.ValidationBehavior.ErrorDetail, CarsTradeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-01 17:12:44.166 +00:00 [INF] Executed action CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI) in 46.7037ms
+2025-11-01 17:12:44.166 +00:00 [INF] Executed endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:12:44.166 +00:00 [DBG] 'CarsTradeDbContext' disposed.
+2025-11-01 17:12:44.167 +00:00 [DBG] Disposing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:44.167 +00:00 [DBG] Disposed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:12:44.167 +00:00 [INF] Request finished HTTP/2 POST https://localhost:8081/api/EmployeeAuthentication/Authenticate - 404 null application/json; charset=utf-8 54.207ms
+2025-11-01 17:12:51.764 +00:00 [INF] Request starting HTTP/2 POST https://localhost:8081/api/EmployeeAuthentication/Authenticate - application/json 55
+2025-11-01 17:12:51.765 +00:00 [DBG] 1 candidate(s) found for the request path '/api/EmployeeAuthentication/Authenticate'
+2025-11-01 17:12:51.765 +00:00 [DBG] Endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)' with route pattern 'api/EmployeeAuthentication/Authenticate' is valid for the request path '/api/EmployeeAuthentication/Authenticate'
+2025-11-01 17:12:51.765 +00:00 [DBG] Request matched endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:12:51.766 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-01 17:12:51.767 +00:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-11-01 17:12:51.767 +00:00 [INF] Executing endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:12:51.768 +00:00 [INF] Route matched with {action = "Authenticate", controller = "EmployeeAuthentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarsTradeAPI.Features.EmployeeOperation.EmployeeDto.AuthResultDto]] Authenticate(CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand) on controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI).
+2025-11-01 17:12:51.768 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-01 17:12:51.768 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-01 17:12:51.768 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-01 17:12:51.769 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-01 17:12:51.769 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-01 17:12:51.769 +00:00 [DBG] Executing controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI)
+2025-11-01 17:12:51.769 +00:00 [DBG] Executed controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI)
+2025-11-01 17:12:51.770 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' ...
+2025-11-01 17:12:51.770 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' using the name '' in request data ...
+2025-11-01 17:12:51.770 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-01 17:12:51.770 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:00000009": started reading request body.
+2025-11-01 17:12:51.771 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:00000009": done reading request body.
+2025-11-01 17:12:51.771 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'
+2025-11-01 17:12:51.771 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:12:51.771 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:12:51.772 +00:00 [DBG] Attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' ...
+2025-11-01 17:12:51.772 +00:00 [DBG] Done attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:12:51.773 +00:00 [INF] Начало обработки запроса аутентификации сотрудника
+2025-11-01 17:12:51.776 +00:00 [INF] Начало обработки команды EmployeeAuthenticationCommand
+2025-11-01 17:12:51.776 +00:00 [INF] Этап получения сотрудника по логину testAdmin1 в репозитории
+2025-11-01 17:12:51.777 +00:00 [DBG] Entity Framework Core 8.0.7 initialized 'CarsTradeDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2025-11-01 17:12:51.778 +00:00 [DBG] Creating DbConnection.
+2025-11-01 17:12:51.778 +00:00 [DBG] Created DbConnection. (0ms).
+2025-11-01 17:12:51.778 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:51.778 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:51.779 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:12:51.779 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:12:51.779 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:12:51.779 +00:00 [DBG] Executing DbCommand [Parameters=[@__login_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__login_0
+LIMIT 1
+2025-11-01 17:12:51.780 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__login_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__login_0
+LIMIT 1
+2025-11-01 17:12:51.780 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:51.781 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 17:12:51.781 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:51.781 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:12:51.781 +00:00 [WRN] Попытка получить несуществующего пользователя с логином: testAdmin1
+2025-11-01 17:12:51.782 +00:00 [WRN] Попытка входа с несуществующим логином: testAdmin1
+2025-11-01 17:12:51.782 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-01 17:12:51.782 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-11-01 17:12:51.783 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-11-01 17:12:51.783 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-01 17:12:51.783 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-01 17:12:51.783 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-01 17:12:51.783 +00:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarsTradeAPI.Infrastructure.ValidationBehavior.ErrorDetail, CarsTradeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-01 17:12:51.784 +00:00 [INF] Executed action CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI) in 14.8895ms
+2025-11-01 17:12:51.784 +00:00 [INF] Executed endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:12:51.784 +00:00 [DBG] 'CarsTradeDbContext' disposed.
+2025-11-01 17:12:51.785 +00:00 [DBG] Disposing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:12:51.785 +00:00 [DBG] Disposed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:12:51.785 +00:00 [INF] Request finished HTTP/2 POST https://localhost:8081/api/EmployeeAuthentication/Authenticate - 404 null application/json; charset=utf-8 20.6509ms
+2025-11-01 17:13:07.145 +00:00 [INF] Request starting HTTP/2 POST https://localhost:8081/api/EmployeeAuthentication/Authenticate - application/json 53
+2025-11-01 17:13:07.146 +00:00 [DBG] 1 candidate(s) found for the request path '/api/EmployeeAuthentication/Authenticate'
+2025-11-01 17:13:07.146 +00:00 [DBG] Endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)' with route pattern 'api/EmployeeAuthentication/Authenticate' is valid for the request path '/api/EmployeeAuthentication/Authenticate'
+2025-11-01 17:13:07.146 +00:00 [DBG] Request matched endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:13:07.147 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-01 17:13:07.147 +00:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-11-01 17:13:07.147 +00:00 [INF] Executing endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:13:07.148 +00:00 [INF] Route matched with {action = "Authenticate", controller = "EmployeeAuthentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarsTradeAPI.Features.EmployeeOperation.EmployeeDto.AuthResultDto]] Authenticate(CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand) on controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI).
+2025-11-01 17:13:07.148 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-01 17:13:07.148 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-01 17:13:07.149 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-01 17:13:07.149 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-01 17:13:07.149 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-01 17:13:07.149 +00:00 [DBG] Executing controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI)
+2025-11-01 17:13:07.150 +00:00 [DBG] Executed controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI)
+2025-11-01 17:13:07.150 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' ...
+2025-11-01 17:13:07.150 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' using the name '' in request data ...
+2025-11-01 17:13:07.151 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-01 17:13:07.151 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:0000000B": started reading request body.
+2025-11-01 17:13:07.151 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:0000000B": done reading request body.
+2025-11-01 17:13:07.151 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'
+2025-11-01 17:13:07.152 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:13:07.152 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:13:07.152 +00:00 [DBG] Attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' ...
+2025-11-01 17:13:07.152 +00:00 [DBG] Done attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:13:07.153 +00:00 [INF] Начало обработки запроса аутентификации сотрудника
+2025-11-01 17:13:07.153 +00:00 [INF] Начало обработки команды EmployeeAuthenticationCommand
+2025-11-01 17:13:07.153 +00:00 [INF] Этап получения сотрудника по логину testUser1 в репозитории
+2025-11-01 17:13:07.154 +00:00 [DBG] Entity Framework Core 8.0.7 initialized 'CarsTradeDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2025-11-01 17:13:07.155 +00:00 [DBG] Creating DbConnection.
+2025-11-01 17:13:07.155 +00:00 [DBG] Created DbConnection. (0ms).
+2025-11-01 17:13:07.155 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:13:07.156 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:13:07.156 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:13:07.156 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:13:07.156 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:13:07.157 +00:00 [DBG] Executing DbCommand [Parameters=[@__login_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__login_0
+LIMIT 1
+2025-11-01 17:13:07.158 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__login_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__login_0
+LIMIT 1
+2025-11-01 17:13:07.158 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:13:07.158 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 17:13:07.159 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:13:07.159 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:13:07.159 +00:00 [WRN] Попытка получить несуществующего пользователя с логином: testUser1
+2025-11-01 17:13:07.160 +00:00 [WRN] Попытка входа с несуществующим логином: testUser1
+2025-11-01 17:13:07.160 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-01 17:13:07.160 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-11-01 17:13:07.160 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-11-01 17:13:07.161 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-01 17:13:07.161 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-01 17:13:07.161 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-01 17:13:07.161 +00:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarsTradeAPI.Infrastructure.ValidationBehavior.ErrorDetail, CarsTradeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-01 17:13:07.162 +00:00 [INF] Executed action CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI) in 12.3128ms
+2025-11-01 17:13:07.162 +00:00 [INF] Executed endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:13:07.162 +00:00 [DBG] 'CarsTradeDbContext' disposed.
+2025-11-01 17:13:07.163 +00:00 [DBG] Disposing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:13:07.163 +00:00 [DBG] Disposed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:13:07.163 +00:00 [INF] Request finished HTTP/2 POST https://localhost:8081/api/EmployeeAuthentication/Authenticate - 404 null application/json; charset=utf-8 17.9641ms
+2025-11-01 17:13:13.956 +00:00 [INF] Request starting HTTP/2 POST https://localhost:8081/api/EmployeeAuthentication/Authenticate - application/json 53
+2025-11-01 17:13:13.957 +00:00 [DBG] 1 candidate(s) found for the request path '/api/EmployeeAuthentication/Authenticate'
+2025-11-01 17:13:13.957 +00:00 [DBG] Endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)' with route pattern 'api/EmployeeAuthentication/Authenticate' is valid for the request path '/api/EmployeeAuthentication/Authenticate'
+2025-11-01 17:13:13.957 +00:00 [DBG] Request matched endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:13:13.958 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-01 17:13:13.958 +00:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-11-01 17:13:13.958 +00:00 [INF] Executing endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:13:13.959 +00:00 [INF] Route matched with {action = "Authenticate", controller = "EmployeeAuthentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarsTradeAPI.Features.EmployeeOperation.EmployeeDto.AuthResultDto]] Authenticate(CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand) on controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI).
+2025-11-01 17:13:13.959 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-01 17:13:13.959 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-01 17:13:13.960 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-01 17:13:13.960 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-01 17:13:13.960 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-01 17:13:13.960 +00:00 [DBG] Executing controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI)
+2025-11-01 17:13:13.961 +00:00 [DBG] Executed controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI)
+2025-11-01 17:13:13.961 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' ...
+2025-11-01 17:13:13.961 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' using the name '' in request data ...
+2025-11-01 17:13:13.961 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-01 17:13:13.962 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:0000000D": started reading request body.
+2025-11-01 17:13:13.962 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:0000000D": done reading request body.
+2025-11-01 17:13:13.962 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'
+2025-11-01 17:13:13.962 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:13:13.963 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:13:13.963 +00:00 [DBG] Attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' ...
+2025-11-01 17:13:13.963 +00:00 [DBG] Done attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:13:13.964 +00:00 [INF] Начало обработки запроса аутентификации сотрудника
+2025-11-01 17:13:13.964 +00:00 [INF] Начало обработки команды EmployeeAuthenticationCommand
+2025-11-01 17:13:13.964 +00:00 [INF] Этап получения сотрудника по логину TestUser1 в репозитории
+2025-11-01 17:13:13.965 +00:00 [DBG] Entity Framework Core 8.0.7 initialized 'CarsTradeDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2025-11-01 17:13:13.966 +00:00 [DBG] Creating DbConnection.
+2025-11-01 17:13:13.966 +00:00 [DBG] Created DbConnection. (0ms).
+2025-11-01 17:13:13.966 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:13:13.967 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:13:13.967 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:13:13.967 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:13:13.967 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:13:13.968 +00:00 [DBG] Executing DbCommand [Parameters=[@__login_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__login_0
+LIMIT 1
+2025-11-01 17:13:13.969 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__login_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__login_0
+LIMIT 1
+2025-11-01 17:13:13.969 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:13:13.969 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 17:13:13.969 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:13:13.970 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:13:13.970 +00:00 [WRN] Попытка получить несуществующего пользователя с логином: TestUser1
+2025-11-01 17:13:13.970 +00:00 [WRN] Попытка входа с несуществующим логином: TestUser1
+2025-11-01 17:13:13.970 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-01 17:13:13.970 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-11-01 17:13:13.971 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-11-01 17:13:13.971 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-01 17:13:13.971 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-01 17:13:13.971 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-01 17:13:13.972 +00:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarsTradeAPI.Infrastructure.ValidationBehavior.ErrorDetail, CarsTradeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-01 17:13:13.972 +00:00 [INF] Executed action CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI) in 11.6541ms
+2025-11-01 17:13:13.972 +00:00 [INF] Executed endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:13:13.972 +00:00 [DBG] 'CarsTradeDbContext' disposed.
+2025-11-01 17:13:13.973 +00:00 [DBG] Disposing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:13:13.973 +00:00 [DBG] Disposed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:13:13.973 +00:00 [INF] Request finished HTTP/2 POST https://localhost:8081/api/EmployeeAuthentication/Authenticate - 404 null application/json; charset=utf-8 16.8596ms
+2025-11-01 17:13:49.991 +00:00 [INF] Request starting HTTP/2 POST https://localhost:8081/api/EmployeeAuthentication/Authenticate - application/json 53
+2025-11-01 17:13:49.991 +00:00 [DBG] 1 candidate(s) found for the request path '/api/EmployeeAuthentication/Authenticate'
+2025-11-01 17:13:49.992 +00:00 [DBG] Endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)' with route pattern 'api/EmployeeAuthentication/Authenticate' is valid for the request path '/api/EmployeeAuthentication/Authenticate'
+2025-11-01 17:13:49.992 +00:00 [DBG] Request matched endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:13:49.992 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-01 17:13:49.993 +00:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-11-01 17:13:49.993 +00:00 [INF] Executing endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:13:49.994 +00:00 [INF] Route matched with {action = "Authenticate", controller = "EmployeeAuthentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarsTradeAPI.Features.EmployeeOperation.EmployeeDto.AuthResultDto]] Authenticate(CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand) on controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI).
+2025-11-01 17:13:49.994 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-01 17:13:49.994 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-01 17:13:49.994 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-01 17:13:49.995 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-01 17:13:49.995 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-01 17:13:49.995 +00:00 [DBG] Executing controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI)
+2025-11-01 17:13:49.995 +00:00 [DBG] Executed controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI)
+2025-11-01 17:13:49.996 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' ...
+2025-11-01 17:13:49.996 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' using the name '' in request data ...
+2025-11-01 17:13:49.996 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-01 17:13:49.997 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:0000000F": started reading request body.
+2025-11-01 17:13:49.997 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:0000000F": done reading request body.
+2025-11-01 17:13:49.997 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'
+2025-11-01 17:13:49.998 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:13:49.998 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:13:49.998 +00:00 [DBG] Attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' ...
+2025-11-01 17:13:49.998 +00:00 [DBG] Done attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:13:49.998 +00:00 [INF] Начало обработки запроса аутентификации сотрудника
+2025-11-01 17:13:49.999 +00:00 [INF] Начало обработки команды EmployeeAuthenticationCommand
+2025-11-01 17:13:49.999 +00:00 [INF] Этап получения сотрудника по логину Testuser1 в репозитории
+2025-11-01 17:13:50.000 +00:00 [DBG] Entity Framework Core 8.0.7 initialized 'CarsTradeDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2025-11-01 17:13:50.001 +00:00 [DBG] Creating DbConnection.
+2025-11-01 17:13:50.001 +00:00 [DBG] Created DbConnection. (0ms).
+2025-11-01 17:13:50.002 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:13:50.002 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:13:50.002 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:13:50.002 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:13:50.003 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:13:50.003 +00:00 [DBG] Executing DbCommand [Parameters=[@__login_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__login_0
+LIMIT 1
+2025-11-01 17:13:50.004 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__login_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__login_0
+LIMIT 1
+2025-11-01 17:13:50.005 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:13:50.005 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 17:13:50.005 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:13:50.006 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:13:50.006 +00:00 [WRN] Попытка получить несуществующего пользователя с логином: Testuser1
+2025-11-01 17:13:50.006 +00:00 [WRN] Попытка входа с несуществующим логином: Testuser1
+2025-11-01 17:13:50.007 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-01 17:13:50.007 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-11-01 17:13:50.007 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-11-01 17:13:50.008 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-01 17:13:50.008 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-01 17:13:50.008 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-01 17:13:50.008 +00:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarsTradeAPI.Infrastructure.ValidationBehavior.ErrorDetail, CarsTradeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-01 17:13:50.009 +00:00 [INF] Executed action CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI) in 13.866ms
+2025-11-01 17:13:50.009 +00:00 [INF] Executed endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:13:50.010 +00:00 [DBG] 'CarsTradeDbContext' disposed.
+2025-11-01 17:13:50.010 +00:00 [DBG] Disposing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:13:50.010 +00:00 [DBG] Disposed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:13:50.010 +00:00 [INF] Request finished HTTP/2 POST https://localhost:8081/api/EmployeeAuthentication/Authenticate - 404 null application/json; charset=utf-8 19.1472ms
+2025-11-01 17:14:42.755 +00:00 [INF] Request starting HTTP/2 POST https://localhost:8081/api/Employee/CreateAdminForTestCommand - application/json 254
+2025-11-01 17:14:42.755 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Employee/CreateAdminForTestCommand'
+2025-11-01 17:14:42.755 +00:00 [DBG] Endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeController.CreateAdminForTest (CarsTradeAPI)' with route pattern 'api/Employee/CreateAdminForTestCommand' is valid for the request path '/api/Employee/CreateAdminForTestCommand'
+2025-11-01 17:14:42.756 +00:00 [DBG] Request matched endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeController.CreateAdminForTest (CarsTradeAPI)'
+2025-11-01 17:14:42.756 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-01 17:14:42.756 +00:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-11-01 17:14:42.757 +00:00 [INF] Executing endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeController.CreateAdminForTest (CarsTradeAPI)'
+2025-11-01 17:14:42.760 +00:00 [INF] Route matched with {action = "CreateAdminForTest", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarsTradeAPI.Features.EmployeeOperation.EmployeeDto.ShowEmployeeDto]] CreateAdminForTest(CarsTradeAPI.Features.EmployeeOperation.CreateAdminForTest.CreateAdminForTestCommand) on controller CarsTradeAPI.Features.EmployeeOperation.EmployeeController (CarsTradeAPI).
+2025-11-01 17:14:42.761 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-01 17:14:42.761 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-01 17:14:42.761 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-01 17:14:42.761 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-01 17:14:42.761 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-01 17:14:42.762 +00:00 [DBG] Executing controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeController (CarsTradeAPI)
+2025-11-01 17:14:42.762 +00:00 [DBG] Executed controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeController (CarsTradeAPI)
+2025-11-01 17:14:42.763 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.CreateAdminForTest.CreateAdminForTestCommand' ...
+2025-11-01 17:14:42.763 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.CreateAdminForTest.CreateAdminForTestCommand' using the name '' in request data ...
+2025-11-01 17:14:42.763 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-01 17:14:42.765 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:00000011": started reading request body.
+2025-11-01 17:14:42.766 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:00000011": done reading request body.
+2025-11-01 17:14:42.769 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'CarsTradeAPI.Features.EmployeeOperation.CreateAdminForTest.CreateAdminForTestCommand'
+2025-11-01 17:14:42.769 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.CreateAdminForTest.CreateAdminForTestCommand'.
+2025-11-01 17:14:42.769 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.CreateAdminForTest.CreateAdminForTestCommand'.
+2025-11-01 17:14:42.769 +00:00 [DBG] Attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.CreateAdminForTest.CreateAdminForTestCommand' ...
+2025-11-01 17:14:42.771 +00:00 [DBG] Done attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.CreateAdminForTest.CreateAdminForTestCommand'.
+2025-11-01 17:14:42.772 +00:00 [INF] Начало обработки запроса CreateAdminForTest
+2025-11-01 17:14:42.785 +00:00 [INF] Начало обработки команды CreateAdminForTestCommand
+2025-11-01 17:14:42.785 +00:00 [INF] Checking IdempotencyRequest for key: 2345234rewt
+2025-11-01 17:14:42.786 +00:00 [DBG] Entity Framework Core 8.0.7 initialized 'CarsTradeDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2025-11-01 17:14:42.788 +00:00 [DBG] Compiling query expression: 
+'DbSet<IdempotencyRequest>()
+    .AsNoTracking()
+    .FirstOrDefault(r => r.Key == __key_0)'
+2025-11-01 17:14:42.793 +00:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<IdempotencyRequest>(
+    asyncEnumerable: new SingleQueryingEnumerable<IdempotencyRequest>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: IdempotencyRequest.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: IdempotencyRequest.CreatedAt (DateTime) Required, 1], [Property: IdempotencyRequest.Key (string) Required MaxLength(100), 2], [Property: IdempotencyRequest.ResourceId (Guid?), 3], [Property: IdempotencyRequest.ResourceType (string) Required MaxLength(50), 4], [Property: IdempotencyRequest.Responsejson (string), 5], [Property: IdempotencyRequest.Status (string) Required MaxLength(50), 6] }
+            SELECT TOP(1) i.Id, i.CreatedAt, i.Key, i.ResourceId, i.ResourceType, i.Responsejson, i.Status
+            FROM IdempotencyRequests AS i
+            WHERE i.Key == @__key_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, IdempotencyRequest>, 
+        CarsTradeAPI.Data.CarsTradeDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-11-01 17:14:42.794 +00:00 [DBG] Creating DbConnection.
+2025-11-01 17:14:42.794 +00:00 [DBG] Created DbConnection. (0ms).
+2025-11-01 17:14:42.795 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.795 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.795 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:14:42.795 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:14:42.796 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:14:42.796 +00:00 [DBG] Executing DbCommand [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."CreatedAt", i."Key", i."ResourceId", i."ResourceType", i."Responsejson", i."Status"
+FROM "IdempotencyRequests" AS i
+WHERE i."Key" = @__key_0
+LIMIT 1
+2025-11-01 17:14:42.798 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."CreatedAt", i."Key", i."ResourceId", i."ResourceType", i."Responsejson", i."Status"
+FROM "IdempotencyRequests" AS i
+WHERE i."Key" = @__key_0
+LIMIT 1
+2025-11-01 17:14:42.799 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.799 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 17:14:42.799 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.799 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:14:42.800 +00:00 [INF] IdempotencyRequest found: false
+2025-11-01 17:14:42.801 +00:00 [INF] Этап проверки уникальности логина TestUser1 в репозитории
+2025-11-01 17:14:42.802 +00:00 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .Any(x => x.EmployeeLogin == __employeeLogin_0)'
+2025-11-01 17:14:42.807 +00:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Employees AS e
+                WHERE e.employee_login == @__employeeLogin_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        CarsTradeAPI.Data.CarsTradeDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-11-01 17:14:42.810 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.810 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.811 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:14:42.811 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:14:42.811 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:14:42.812 +00:00 [DBG] Executing DbCommand [Parameters=[@__employeeLogin_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Employees" AS e
+    WHERE e.employee_login = @__employeeLogin_0)
+2025-11-01 17:14:42.812 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__employeeLogin_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Employees" AS e
+    WHERE e.employee_login = @__employeeLogin_0)
+2025-11-01 17:14:42.815 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.815 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 2ms reading results.
+2025-11-01 17:14:42.815 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.816 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:14:42.816 +00:00 [INF] Проверка уникальности логина TestUser1 завершена. Результат: false
+2025-11-01 17:14:42.869 +00:00 [INF] Этап создания работника с ID "0f72bdc9-0033-4acd-a43a-e7410c6deb24" в репозитории
+2025-11-01 17:14:42.870 +00:00 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .FirstOrDefault(x => x.EmployeeLogin == __employee_EmployeeLogin_0)'
+2025-11-01 17:14:42.872 +00:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Employee>(
+    asyncEnumerable: new SingleQueryingEnumerable<Employee>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.EmployeeId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.EmployeeAge (uint) Required, 1], [Property: Employee.EmployeeLogin (string) Required Index, 2], [Property: Employee.EmployeeMiddlename (string) Required, 3], [Property: Employee.EmployeeName (string) Required, 4], [Property: Employee.EmployeePassword (string) Required MaxLength(260), 5], [Property: Employee.EmployeeRole (string) Required, 6], [Property: Employee.EmployeeSellCounter (uint?), 7], [Property: Employee.EmployeeSurname (string) Required, 8] }
+            SELECT TOP(1) e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+            FROM Employees AS e
+            WHERE e.employee_login == @__employee_EmployeeLogin_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+        CarsTradeAPI.Data.CarsTradeDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-11-01 17:14:42.873 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.874 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.874 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:14:42.874 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:14:42.874 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:14:42.875 +00:00 [DBG] Executing DbCommand [Parameters=[@__employee_EmployeeLogin_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__employee_EmployeeLogin_0
+LIMIT 1
+2025-11-01 17:14:42.876 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__employee_EmployeeLogin_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__employee_EmployeeLogin_0
+LIMIT 1
+2025-11-01 17:14:42.876 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.876 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 17:14:42.876 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.877 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:14:42.916 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:14:42.918 +00:00 [DBG] SaveChanges starting for 'CarsTradeDbContext'.
+2025-11-01 17:14:42.920 +00:00 [DBG] DetectChanges starting for 'CarsTradeDbContext'.
+2025-11-01 17:14:42.929 +00:00 [DBG] DetectChanges completed for 'CarsTradeDbContext'.
+2025-11-01 17:14:42.957 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.957 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.958 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:14:42.958 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:14:42.960 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-11-01 17:14:42.960 +00:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int64), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?' (DbType = Int64), @p8='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" (employee_id, employee_age, employee_login, employee_middlename, employee_name, employee_password, employee_role, employee_sellcounter, employee_surname)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-11-01 17:14:42.965 +00:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int64), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?' (DbType = Int64), @p8='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" (employee_id, employee_age, employee_login, employee_middlename, employee_name, employee_password, employee_role, employee_sellcounter, employee_surname)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-11-01 17:14:42.967 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.967 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 1ms reading results.
+2025-11-01 17:14:42.968 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.968 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:14:42.972 +00:00 [DBG] An entity of type 'Employee' tracked by 'CarsTradeDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:14:42.974 +00:00 [DBG] SaveChanges completed for 'CarsTradeDbContext' with 1 entities written to the database.
+2025-11-01 17:14:42.974 +00:00 [INF] Работник успешно создан с ID: "0f72bdc9-0033-4acd-a43a-e7410c6deb24"
+2025-11-01 17:14:42.983 +00:00 [DBG] Compiling query expression: 
+'DbSet<IdempotencyRequest>()
+    .Any(r => r.Key == __key_0)'
+2025-11-01 17:14:42.984 +00:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM IdempotencyRequests AS i
+                WHERE i.Key == @__key_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        CarsTradeAPI.Data.CarsTradeDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-11-01 17:14:42.986 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.986 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.986 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:14:42.986 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:14:42.987 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:14:42.987 +00:00 [DBG] Executing DbCommand [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "IdempotencyRequests" AS i
+    WHERE i."Key" = @__key_0)
+2025-11-01 17:14:42.988 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "IdempotencyRequests" AS i
+    WHERE i."Key" = @__key_0)
+2025-11-01 17:14:42.988 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.988 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 17:14:42.988 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:42.989 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:14:43.002 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'IdempotencyRequest' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:14:43.002 +00:00 [DBG] SaveChanges starting for 'CarsTradeDbContext'.
+2025-11-01 17:14:43.002 +00:00 [DBG] DetectChanges starting for 'CarsTradeDbContext'.
+2025-11-01 17:14:43.008 +00:00 [DBG] DetectChanges completed for 'CarsTradeDbContext'.
+2025-11-01 17:14:43.009 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:43.009 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:43.010 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:14:43.010 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:14:43.010 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:14:43.011 +00:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Guid), @p4='?', @p5='?', @p6='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "IdempotencyRequests" ("Id", "CreatedAt", "Key", "ResourceId", "ResourceType", "Responsejson", "Status")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-11-01 17:14:43.017 +00:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Guid), @p4='?', @p5='?', @p6='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "IdempotencyRequests" ("Id", "CreatedAt", "Key", "ResourceId", "ResourceType", "Responsejson", "Status")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-11-01 17:14:43.018 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:43.018 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 17:14:43.018 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:43.018 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:14:43.020 +00:00 [DBG] An entity of type 'IdempotencyRequest' tracked by 'CarsTradeDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:14:43.020 +00:00 [DBG] SaveChanges completed for 'CarsTradeDbContext' with 1 entities written to the database.
+2025-11-01 17:14:43.020 +00:00 [INF] IdempotencyRequest saved for key: 2345234rewt
+2025-11-01 17:14:43.168 +00:00 [INF] Администратор успешно создан с ID: "0f72bdc9-0033-4acd-a43a-e7410c6deb24"
+2025-11-01 17:14:43.169 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-01 17:14:43.169 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-11-01 17:14:43.169 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-11-01 17:14:43.169 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-01 17:14:43.170 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-01 17:14:43.170 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-01 17:14:43.170 +00:00 [INF] Executing OkObjectResult, writing value of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeDto.ShowEmployeeDto'.
+2025-11-01 17:14:43.171 +00:00 [INF] Executed action CarsTradeAPI.Features.EmployeeOperation.EmployeeController.CreateAdminForTest (CarsTradeAPI) in 409.6045ms
+2025-11-01 17:14:43.171 +00:00 [INF] Executed endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeController.CreateAdminForTest (CarsTradeAPI)'
+2025-11-01 17:14:43.172 +00:00 [DBG] 'CarsTradeDbContext' disposed.
+2025-11-01 17:14:43.172 +00:00 [DBG] Disposing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:43.172 +00:00 [DBG] Disposed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:14:43.173 +00:00 [INF] Request finished HTTP/2 POST https://localhost:8081/api/Employee/CreateAdminForTestCommand - 200 null application/json; charset=utf-8 418.0629ms
+2025-11-01 17:14:54.195 +00:00 [INF] Request starting HTTP/2 POST https://localhost:8081/api/EmployeeAuthentication/Authenticate - application/json 53
+2025-11-01 17:14:54.195 +00:00 [DBG] 1 candidate(s) found for the request path '/api/EmployeeAuthentication/Authenticate'
+2025-11-01 17:14:54.196 +00:00 [DBG] Endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)' with route pattern 'api/EmployeeAuthentication/Authenticate' is valid for the request path '/api/EmployeeAuthentication/Authenticate'
+2025-11-01 17:14:54.196 +00:00 [DBG] Request matched endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:14:54.196 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-01 17:14:54.197 +00:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-11-01 17:14:54.197 +00:00 [INF] Executing endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:14:54.197 +00:00 [INF] Route matched with {action = "Authenticate", controller = "EmployeeAuthentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarsTradeAPI.Features.EmployeeOperation.EmployeeDto.AuthResultDto]] Authenticate(CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand) on controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI).
+2025-11-01 17:14:54.197 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-01 17:14:54.198 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-01 17:14:54.198 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-01 17:14:54.198 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-01 17:14:54.198 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-01 17:14:54.199 +00:00 [DBG] Executing controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI)
+2025-11-01 17:14:54.199 +00:00 [DBG] Executed controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController (CarsTradeAPI)
+2025-11-01 17:14:54.199 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' ...
+2025-11-01 17:14:54.200 +00:00 [DBG] Attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' using the name '' in request data ...
+2025-11-01 17:14:54.200 +00:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-01 17:14:54.200 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:00000013": started reading request body.
+2025-11-01 17:14:54.200 +00:00 [DBG] Connection id "0HNGPD75EVCJK", Request id "0HNGPD75EVCJK:00000013": done reading request body.
+2025-11-01 17:14:54.200 +00:00 [DBG] JSON input formatter succeeded, deserializing to type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'
+2025-11-01 17:14:54.201 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:14:54.201 +00:00 [DBG] Done attempting to bind parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:14:54.201 +00:00 [DBG] Attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand' ...
+2025-11-01 17:14:54.202 +00:00 [DBG] Done attempting to validate the bound parameter 'command' of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthentication.EmployeeAuthenticationCommand'.
+2025-11-01 17:14:54.202 +00:00 [INF] Начало обработки запроса аутентификации сотрудника
+2025-11-01 17:14:54.202 +00:00 [INF] Начало обработки команды EmployeeAuthenticationCommand
+2025-11-01 17:14:54.203 +00:00 [INF] Этап получения сотрудника по логину TestUser1 в репозитории
+2025-11-01 17:14:54.203 +00:00 [DBG] Entity Framework Core 8.0.7 initialized 'CarsTradeDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2025-11-01 17:14:54.204 +00:00 [DBG] Creating DbConnection.
+2025-11-01 17:14:54.204 +00:00 [DBG] Created DbConnection. (0ms).
+2025-11-01 17:14:54.204 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:54.204 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:54.205 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:14:54.205 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:14:54.205 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:14:54.205 +00:00 [DBG] Executing DbCommand [Parameters=[@__login_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__login_0
+LIMIT 1
+2025-11-01 17:14:54.206 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__login_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+WHERE e.employee_login = @__login_0
+LIMIT 1
+2025-11-01 17:14:54.209 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:14:54.210 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:54.210 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 3ms reading results.
+2025-11-01 17:14:54.211 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:54.211 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:14:54.211 +00:00 [INF] Сотрудник успешно получен с логином: TestUser1
+2025-11-01 17:14:54.302 +00:00 [INF] Пользователь с логином: TestUser1 успешно аутентифицирован
+2025-11-01 17:14:54.303 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-01 17:14:54.303 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-11-01 17:14:54.303 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-11-01 17:14:54.304 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-01 17:14:54.304 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-01 17:14:54.304 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-01 17:14:54.304 +00:00 [INF] Executing OkObjectResult, writing value of type 'CarsTradeAPI.Features.EmployeeOperation.EmployeeDto.AuthResultDto'.
+2025-11-01 17:14:54.308 +00:00 [INF] Executed action CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI) in 109.7676ms
+2025-11-01 17:14:54.309 +00:00 [INF] Executed endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeAuthenticationController.Authenticate (CarsTradeAPI)'
+2025-11-01 17:14:54.309 +00:00 [DBG] 'CarsTradeDbContext' disposed.
+2025-11-01 17:14:54.309 +00:00 [DBG] Disposing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:14:54.309 +00:00 [DBG] Disposed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:14:54.310 +00:00 [INF] Request finished HTTP/2 POST https://localhost:8081/api/EmployeeAuthentication/Authenticate - 200 null application/json; charset=utf-8 114.666ms
+2025-11-01 17:15:14.961 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/api/Employee/GetAllEmployee/All - null null
+2025-11-01 17:15:14.962 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Employee/GetAllEmployee/All'
+2025-11-01 17:15:14.962 +00:00 [DBG] Endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeController.GetAllEmployee (CarsTradeAPI)' with route pattern 'api/Employee/GetAllEmployee/All' is valid for the request path '/api/Employee/GetAllEmployee/All'
+2025-11-01 17:15:14.962 +00:00 [DBG] Request matched endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeController.GetAllEmployee (CarsTradeAPI)'
+2025-11-01 17:15:14.963 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-01 17:15:14.969 +00:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14121: JWT is not a well formed JWE, there must be four dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-01 17:15:14.982 +00:00 [INF] Bearer was not authenticated. Failure message: IDX14121: JWT is not a well formed JWE, there must be four dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-11-01 17:15:14.983 +00:00 [DBG] Policy authentication schemes  did not succeed
+2025-11-01 17:15:14.985 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-01 17:15:14.988 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-11-01 17:15:14.988 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/api/Employee/GetAllEmployee/All - 401 0 null 27.1353ms
+2025-11-01 17:15:42.608 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/api/Employee/GetAllEmployee/All - null null
+2025-11-01 17:15:42.609 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Employee/GetAllEmployee/All'
+2025-11-01 17:15:42.609 +00:00 [DBG] Endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeController.GetAllEmployee (CarsTradeAPI)' with route pattern 'api/Employee/GetAllEmployee/All' is valid for the request path '/api/Employee/GetAllEmployee/All'
+2025-11-01 17:15:42.609 +00:00 [DBG] Request matched endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeController.GetAllEmployee (CarsTradeAPI)'
+2025-11-01 17:15:42.610 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-01 17:15:42.627 +00:00 [DBG] Successfully validated the token.
+2025-11-01 17:15:42.628 +00:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-11-01 17:15:42.629 +00:00 [DBG] Authorization was successful.
+2025-11-01 17:15:42.630 +00:00 [INF] Executing endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeController.GetAllEmployee (CarsTradeAPI)'
+2025-11-01 17:15:42.632 +00:00 [INF] Route matched with {action = "GetAllEmployee", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarsTradeAPI.Features.EmployeeOperation.EmployeeDto.ShowEmployeeDto]]] GetAllEmployee() on controller CarsTradeAPI.Features.EmployeeOperation.EmployeeController (CarsTradeAPI).
+2025-11-01 17:15:42.632 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-01 17:15:42.632 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-01 17:15:42.633 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-01 17:15:42.633 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-01 17:15:42.633 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-01 17:15:42.634 +00:00 [DBG] Executing controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeController (CarsTradeAPI)
+2025-11-01 17:15:42.634 +00:00 [DBG] Executed controller factory for controller CarsTradeAPI.Features.EmployeeOperation.EmployeeController (CarsTradeAPI)
+2025-11-01 17:15:42.635 +00:00 [INF] Начало обработки запроса GetAllEmployee
+2025-11-01 17:15:42.637 +00:00 [INF] Начало обработки команды GetAllEmployeeQuery
+2025-11-01 17:15:42.644 +00:00 [INF] Этап получения всех сотрудников в репозитории
+2025-11-01 17:15:42.646 +00:00 [DBG] Entity Framework Core 8.0.7 initialized 'CarsTradeDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2025-11-01 17:15:42.647 +00:00 [DBG] Compiling query expression: 
+'DbSet<Employee>()'
+2025-11-01 17:15:42.650 +00:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Employee>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.EmployeeId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.EmployeeAge (uint) Required, 1], [Property: Employee.EmployeeLogin (string) Required Index, 2], [Property: Employee.EmployeeMiddlename (string) Required, 3], [Property: Employee.EmployeeName (string) Required, 4], [Property: Employee.EmployeePassword (string) Required MaxLength(260), 5], [Property: Employee.EmployeeRole (string) Required, 6], [Property: Employee.EmployeeSellCounter (uint?), 7], [Property: Employee.EmployeeSurname (string) Required, 8] }
+        SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+        FROM Employees AS e), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+    CarsTradeAPI.Data.CarsTradeDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-11-01 17:15:42.651 +00:00 [DBG] Creating DbConnection.
+2025-11-01 17:15:42.651 +00:00 [DBG] Created DbConnection. (0ms).
+2025-11-01 17:15:42.652 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:15:42.652 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:15:42.652 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:15:42.652 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:15:42.653 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:15:42.653 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+2025-11-01 17:15:42.654 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e.employee_id, e.employee_age, e.employee_login, e.employee_middlename, e.employee_name, e.employee_password, e.employee_role, e.employee_sellcounter, e.employee_surname
+FROM "Employees" AS e
+2025-11-01 17:15:42.654 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:42.655 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:42.655 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:42.656 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:42.656 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:42.657 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:42.657 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:42.657 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:42.658 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:15:42.658 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 3ms reading results.
+2025-11-01 17:15:42.658 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:15:42.658 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:15:42.659 +00:00 [INF] Все сотрудники успешно получены. Количество: 8
+2025-11-01 17:15:42.668 +00:00 [INF] Успешное получение всех сотрудников. Количество: 8
+2025-11-01 17:15:42.668 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-01 17:15:42.668 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-11-01 17:15:42.668 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-11-01 17:15:42.669 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-01 17:15:42.669 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-01 17:15:42.669 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-01 17:15:42.669 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarsTradeAPI.Features.EmployeeOperation.EmployeeDto.ShowEmployeeDto, CarsTradeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-01 17:15:42.671 +00:00 [INF] Executed action CarsTradeAPI.Features.EmployeeOperation.EmployeeController.GetAllEmployee (CarsTradeAPI) in 37.6539ms
+2025-11-01 17:15:42.671 +00:00 [INF] Executed endpoint 'CarsTradeAPI.Features.EmployeeOperation.EmployeeController.GetAllEmployee (CarsTradeAPI)'
+2025-11-01 17:15:42.672 +00:00 [DBG] 'CarsTradeDbContext' disposed.
+2025-11-01 17:15:42.672 +00:00 [DBG] Disposing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:15:42.672 +00:00 [DBG] Disposed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:15:42.673 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/api/Employee/GetAllEmployee/All - 200 null application/json; charset=utf-8 64.2881ms
+2025-11-01 17:15:55.023 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/api/Orders/GetAllOrders/All - null null
+2025-11-01 17:15:55.024 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Orders/GetAllOrders/All'
+2025-11-01 17:15:55.024 +00:00 [DBG] Endpoint 'CarsTradeAPI.Features.OrdersOperation.OrdersController.GetAllOrders (CarsTradeAPI)' with route pattern 'api/Orders/GetAllOrders/All' is valid for the request path '/api/Orders/GetAllOrders/All'
+2025-11-01 17:15:55.024 +00:00 [DBG] Request matched endpoint 'CarsTradeAPI.Features.OrdersOperation.OrdersController.GetAllOrders (CarsTradeAPI)'
+2025-11-01 17:15:55.025 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-01 17:15:55.026 +00:00 [DBG] Successfully validated the token.
+2025-11-01 17:15:55.026 +00:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-11-01 17:15:55.027 +00:00 [DBG] Authorization was successful.
+2025-11-01 17:15:55.027 +00:00 [INF] Executing endpoint 'CarsTradeAPI.Features.OrdersOperation.OrdersController.GetAllOrders (CarsTradeAPI)'
+2025-11-01 17:15:55.030 +00:00 [INF] Route matched with {action = "GetAllOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarsTradeAPI.Features.OrdersOperation.OrdersDto.ShowOrderDto]]] GetAllOrders() on controller CarsTradeAPI.Features.OrdersOperation.OrdersController (CarsTradeAPI).
+2025-11-01 17:15:55.030 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-01 17:15:55.030 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-01 17:15:55.030 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-01 17:15:55.031 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-01 17:15:55.031 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-01 17:15:55.031 +00:00 [DBG] Executing controller factory for controller CarsTradeAPI.Features.OrdersOperation.OrdersController (CarsTradeAPI)
+2025-11-01 17:15:55.032 +00:00 [DBG] Executed controller factory for controller CarsTradeAPI.Features.OrdersOperation.OrdersController (CarsTradeAPI)
+2025-11-01 17:15:55.033 +00:00 [INF] Получение запроса на выдачу всех заказов
+2025-11-01 17:15:55.035 +00:00 [INF] Начало обработки команды GetAllOrdersQuery
+2025-11-01 17:15:55.037 +00:00 [INF] Этап получения всех заказов в репозитории
+2025-11-01 17:15:55.038 +00:00 [DBG] Entity Framework Core 8.0.7 initialized 'CarsTradeDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2025-11-01 17:15:55.039 +00:00 [DBG] Compiling query expression: 
+'DbSet<Order>()
+    .Include(o => o.OrderItems)
+    .ThenInclude(oi => oi.CarModel)'
+2025-11-01 17:15:55.043 +00:00 [DBG] Including navigation: 'Order.OrderItems'.
+2025-11-01 17:15:55.046 +00:00 [DBG] Including navigation: 'OrderItem.CarModel'.
+2025-11-01 17:15:55.086 +00:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Order.OrderId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Order.BuyerId (Guid) Required FK Index, 1], [Property: Order.EmployeeId (Guid) Required FK Index, 2], [Property: Order.OrderAddress (OrderAddress) Required, 3], [Property: Order.OrderCompletionDate (DateTime?), 4], [Property: Order.OrderCreateDate (DateTime) Required, 5], [Property: Order.OrderPrice (decimal) Required, 6] }
+            1 -> 0
+            2 -> Dictionary<IProperty, int> { [Property: OrderItem.OrderItemId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 7], [Property: OrderItem.CarModelId (Guid) Required FK Index, 8], [Property: OrderItem.OrderId (Guid) Required FK Index, 9], [Property: OrderItem.OrderItemComments (string), 10], [Property: OrderItem.OrderQuantity (long) Required, 11], [Property: OrderItem.UnitPrice (decimal) Required, 12] }
+            3 -> Dictionary<IProperty, int> { [Property: CarModel.CarModelId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 13], [Property: CarModel.CarColor (string) Required, 14], [Property: CarModel.CarConfiguration (CarConfiguration) Required, 15], [Property: CarModel.CarCountry (string) Required, 16], [Property: CarModel.CarEngine (Engine), 17], [Property: CarModel.CarManufacturer (string) Required Index, 18], [Property: CarModel.CarModelName (string) Required Index, 19], [Property: CarModel.CarPrice (decimal) Required, 20], [Property: CarModel.ProductionDateTime (DateTime) Required, 21] }
+            4 -> 7
+            5 -> 13
+        SELECT o.order_id, o.BuyerId, o.EmployeeId, o.order_delivery_address, o.order_completion_date, o.order_create_date, o.order_price, t.orderitem_id, t.CarModelId, t.OrderId, t.comments, t.order_quantity, t.unit_price, t.car_id, t.car_color, t.car_configuration, t.car_country, t.car_engine, t.car_manufacturer, t.car_model, t.car_price, t.car_productionDateTime
+        FROM Orders AS o
+        LEFT JOIN 
+        (
+            SELECT o0.orderitem_id, o0.CarModelId, o0.OrderId, o0.comments, o0.order_quantity, o0.unit_price, c.car_id, c.car_color, c.car_configuration, c.car_country, c.car_engine, c.car_manufacturer, c.car_model, c.car_price, c.car_productionDateTime
+            FROM OrderItems AS o0
+            INNER JOIN CarModels AS c ON o0.CarModelId == c.car_id
+        ) AS t ON o.order_id == t.OrderId
+        ORDER BY o.order_id ASC, t.orderitem_id ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Order>, 
+    CarsTradeAPI.Data.CarsTradeDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-11-01 17:15:55.088 +00:00 [DBG] Creating DbConnection.
+2025-11-01 17:15:55.088 +00:00 [DBG] Created DbConnection. (0ms).
+2025-11-01 17:15:55.088 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:15:55.088 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:15:55.089 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:15:55.089 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:15:55.089 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:15:55.089 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT o.order_id, o."BuyerId", o."EmployeeId", o.order_delivery_address, o.order_completion_date, o.order_create_date, o.order_price, t.orderitem_id, t."CarModelId", t."OrderId", t.comments, t.order_quantity, t.unit_price, t.car_id, t.car_color, t.car_configuration, t.car_country, t.car_engine, t.car_manufacturer, t.car_model, t.car_price, t."car_productionDateTime"
+FROM "Orders" AS o
+LEFT JOIN (
+    SELECT o0.orderitem_id, o0."CarModelId", o0."OrderId", o0.comments, o0.order_quantity, o0.unit_price, c.car_id, c.car_color, c.car_configuration, c.car_country, c.car_engine, c.car_manufacturer, c.car_model, c.car_price, c."car_productionDateTime"
+    FROM "OrderItems" AS o0
+    INNER JOIN "CarModels" AS c ON o0."CarModelId" = c.car_id
+) AS t ON o.order_id = t."OrderId"
+ORDER BY o.order_id, t.orderitem_id
+2025-11-01 17:15:55.098 +00:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT o.order_id, o."BuyerId", o."EmployeeId", o.order_delivery_address, o.order_completion_date, o.order_create_date, o.order_price, t.orderitem_id, t."CarModelId", t."OrderId", t.comments, t.order_quantity, t.unit_price, t.car_id, t.car_color, t.car_configuration, t.car_country, t.car_engine, t.car_manufacturer, t.car_model, t.car_price, t."car_productionDateTime"
+FROM "Orders" AS o
+LEFT JOIN (
+    SELECT o0.orderitem_id, o0."CarModelId", o0."OrderId", o0.comments, o0.order_quantity, o0.unit_price, c.car_id, c.car_color, c.car_configuration, c.car_country, c.car_engine, c.car_manufacturer, c.car_model, c.car_price, c."car_productionDateTime"
+    FROM "OrderItems" AS o0
+    INNER JOIN "CarModels" AS c ON o0."CarModelId" = c.car_id
+) AS t ON o.order_id = t."OrderId"
+ORDER BY o.order_id, t.orderitem_id
+2025-11-01 17:15:55.111 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:55.126 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:55.146 +00:00 [DBG] The navigation 'OrderItem.CarModel' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:55.147 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'CarModel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:55.156 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:55.156 +00:00 [DBG] The navigation 'OrderItem.Order' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:55.156 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:55.157 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:55.157 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:55.157 +00:00 [DBG] The navigation 'OrderItem.CarModel' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:55.158 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'CarModel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:15:55.158 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:15:55.158 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 59ms reading results.
+2025-11-01 17:15:55.159 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:15:55.159 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:15:55.159 +00:00 [INF] Все заказы успешно получены, количество: 3
+2025-11-01 17:15:55.170 +00:00 [INF] Успешное получение 3 заказов
+2025-11-01 17:15:55.171 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-01 17:15:55.171 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-11-01 17:15:55.171 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-11-01 17:15:55.172 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-01 17:15:55.172 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-01 17:15:55.172 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-01 17:15:55.172 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarsTradeAPI.Features.OrdersOperation.OrdersDto.ShowOrderDto, CarsTradeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-01 17:15:55.175 +00:00 [INF] Executed action CarsTradeAPI.Features.OrdersOperation.OrdersController.GetAllOrders (CarsTradeAPI) in 143.5093ms
+2025-11-01 17:15:55.175 +00:00 [INF] Executed endpoint 'CarsTradeAPI.Features.OrdersOperation.OrdersController.GetAllOrders (CarsTradeAPI)'
+2025-11-01 17:15:55.175 +00:00 [DBG] 'CarsTradeDbContext' disposed.
+2025-11-01 17:15:55.176 +00:00 [DBG] Disposing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:15:55.176 +00:00 [DBG] Disposed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:15:55.176 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/api/Orders/GetAllOrders/All - 200 null application/json; charset=utf-8 153.1322ms
+2025-11-01 17:16:21.799 +00:00 [INF] Request starting HTTP/2 DELETE https://localhost:8081/api/Orders/DeleteOrder/68bf81cb-35d8-42db-8b27-7a59619e2d44 - null null
+2025-11-01 17:16:21.801 +00:00 [DBG] 1 candidate(s) found for the request path '/api/Orders/DeleteOrder/68bf81cb-35d8-42db-8b27-7a59619e2d44'
+2025-11-01 17:16:21.801 +00:00 [DBG] Endpoint 'CarsTradeAPI.Features.OrdersOperation.OrdersController.DeleteOrder (CarsTradeAPI)' with route pattern 'api/Orders/DeleteOrder/{Id:Guid}' is valid for the request path '/api/Orders/DeleteOrder/68bf81cb-35d8-42db-8b27-7a59619e2d44'
+2025-11-01 17:16:21.802 +00:00 [DBG] Request matched endpoint 'CarsTradeAPI.Features.OrdersOperation.OrdersController.DeleteOrder (CarsTradeAPI)'
+2025-11-01 17:16:21.802 +00:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-01 17:16:21.803 +00:00 [DBG] Successfully validated the token.
+2025-11-01 17:16:21.803 +00:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-11-01 17:16:21.804 +00:00 [DBG] Authorization was successful.
+2025-11-01 17:16:21.804 +00:00 [INF] Executing endpoint 'CarsTradeAPI.Features.OrdersOperation.OrdersController.DeleteOrder (CarsTradeAPI)'
+2025-11-01 17:16:21.808 +00:00 [INF] Route matched with {action = "DeleteOrder", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarsTradeAPI.Features.OrdersOperation.OrdersDto.ShowOrderDto]] DeleteOrder(System.Guid, System.String) on controller CarsTradeAPI.Features.OrdersOperation.OrdersController (CarsTradeAPI).
+2025-11-01 17:16:21.809 +00:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-01 17:16:21.809 +00:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-01 17:16:21.809 +00:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-01 17:16:21.809 +00:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-01 17:16:21.810 +00:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-01 17:16:21.810 +00:00 [DBG] Executing controller factory for controller CarsTradeAPI.Features.OrdersOperation.OrdersController (CarsTradeAPI)
+2025-11-01 17:16:21.810 +00:00 [DBG] Executed controller factory for controller CarsTradeAPI.Features.OrdersOperation.OrdersController (CarsTradeAPI)
+2025-11-01 17:16:21.810 +00:00 [DBG] Attempting to bind parameter 'Id' of type 'System.Guid' ...
+2025-11-01 17:16:21.811 +00:00 [DBG] Attempting to bind parameter 'Id' of type 'System.Guid' using the name 'Id' in request data ...
+2025-11-01 17:16:21.812 +00:00 [DBG] Done attempting to bind parameter 'Id' of type 'System.Guid'.
+2025-11-01 17:16:21.812 +00:00 [DBG] Done attempting to bind parameter 'Id' of type 'System.Guid'.
+2025-11-01 17:16:21.812 +00:00 [DBG] Attempting to validate the bound parameter 'Id' of type 'System.Guid' ...
+2025-11-01 17:16:21.812 +00:00 [DBG] Done attempting to validate the bound parameter 'Id' of type 'System.Guid'.
+2025-11-01 17:16:21.813 +00:00 [DBG] Attempting to bind parameter 'idempotencyKey' of type 'System.String' ...
+2025-11-01 17:16:21.813 +00:00 [DBG] Attempting to bind parameter 'idempotencyKey' of type 'System.String' using the name 'idempotencyKey' in request data ...
+2025-11-01 17:16:21.814 +00:00 [DBG] Attempting to bind parameter 'idempotencyKey' of type 'System.String' using the name 'idempotencyKey' in request data ...
+2025-11-01 17:16:21.815 +00:00 [DBG] Done attempting to bind parameter 'idempotencyKey' of type 'System.String'.
+2025-11-01 17:16:21.816 +00:00 [DBG] Done attempting to bind parameter 'idempotencyKey' of type 'System.String'.
+2025-11-01 17:16:21.816 +00:00 [DBG] Done attempting to bind parameter 'idempotencyKey' of type 'System.String'.
+2025-11-01 17:16:21.816 +00:00 [DBG] Attempting to validate the bound parameter 'idempotencyKey' of type 'System.String' ...
+2025-11-01 17:16:21.817 +00:00 [DBG] Done attempting to validate the bound parameter 'idempotencyKey' of type 'System.String'.
+2025-11-01 17:16:21.818 +00:00 [INF] Получение запроса на удаление заказа с ID: "68bf81cb-35d8-42db-8b27-7a59619e2d44"
+2025-11-01 17:16:21.838 +00:00 [INF] Начало обработки команды DeleteOrderCommand
+2025-11-01 17:16:21.838 +00:00 [INF] Checking IdempotencyRequest for key: 12432122341234
+2025-11-01 17:16:21.839 +00:00 [DBG] Entity Framework Core 8.0.7 initialized 'CarsTradeDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2025-11-01 17:16:21.839 +00:00 [DBG] Creating DbConnection.
+2025-11-01 17:16:21.840 +00:00 [DBG] Created DbConnection. (0ms).
+2025-11-01 17:16:21.840 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.840 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.841 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:16:21.841 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:16:21.842 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-11-01 17:16:21.842 +00:00 [DBG] Executing DbCommand [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."CreatedAt", i."Key", i."ResourceId", i."ResourceType", i."Responsejson", i."Status"
+FROM "IdempotencyRequests" AS i
+WHERE i."Key" = @__key_0
+LIMIT 1
+2025-11-01 17:16:21.844 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT i."Id", i."CreatedAt", i."Key", i."ResourceId", i."ResourceType", i."Responsejson", i."Status"
+FROM "IdempotencyRequests" AS i
+WHERE i."Key" = @__key_0
+LIMIT 1
+2025-11-01 17:16:21.844 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.845 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 17:16:21.845 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.845 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:16:21.846 +00:00 [INF] IdempotencyRequest found: false
+2025-11-01 17:16:21.848 +00:00 [INF] Этап удаления заказа с ID "68bf81cb-35d8-42db-8b27-7a59619e2d44" в репозитории
+2025-11-01 17:16:21.849 +00:00 [DBG] Compiling query expression: 
+'DbSet<Order>()
+    .FirstOrDefault(o => o.OrderId == __orderId_0)'
+2025-11-01 17:16:21.853 +00:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Order>(
+    asyncEnumerable: new SingleQueryingEnumerable<Order>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Order.OrderId (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Order.BuyerId (Guid) Required FK Index, 1], [Property: Order.EmployeeId (Guid) Required FK Index, 2], [Property: Order.OrderAddress (OrderAddress) Required, 3], [Property: Order.OrderCompletionDate (DateTime?), 4], [Property: Order.OrderCreateDate (DateTime) Required, 5], [Property: Order.OrderPrice (decimal) Required, 6] }
+            SELECT TOP(1) o.order_id, o.BuyerId, o.EmployeeId, o.order_delivery_address, o.order_completion_date, o.order_create_date, o.order_price
+            FROM Orders AS o
+            WHERE o.order_id == @__orderId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Order>, 
+        CarsTradeAPI.Data.CarsTradeDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-11-01 17:16:21.854 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.854 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.855 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:16:21.855 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:16:21.855 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:16:21.855 +00:00 [DBG] Executing DbCommand [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT o.order_id, o."BuyerId", o."EmployeeId", o.order_delivery_address, o.order_completion_date, o.order_create_date, o.order_price
+FROM "Orders" AS o
+WHERE o.order_id = @__orderId_0
+LIMIT 1
+2025-11-01 17:16:21.857 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT o.order_id, o."BuyerId", o."EmployeeId", o.order_delivery_address, o.order_completion_date, o.order_create_date, o.order_price
+FROM "Orders" AS o
+WHERE o.order_id = @__orderId_0
+LIMIT 1
+2025-11-01 17:16:21.857 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:16:21.858 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.858 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 1ms reading results.
+2025-11-01 17:16:21.859 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.859 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:16:21.860 +00:00 [DBG] An entity of type 'Order' tracked by 'CarsTradeDbContext' changed state from '"Unchanged"' to '"Deleted"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:16:21.862 +00:00 [DBG] SaveChanges starting for 'CarsTradeDbContext'.
+2025-11-01 17:16:21.863 +00:00 [DBG] DetectChanges starting for 'CarsTradeDbContext'.
+2025-11-01 17:16:21.872 +00:00 [DBG] DetectChanges completed for 'CarsTradeDbContext'.
+2025-11-01 17:16:21.877 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.877 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.878 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:16:21.878 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:16:21.878 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:16:21.878 +00:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Orders"
+WHERE order_id = @p0;
+2025-11-01 17:16:21.883 +00:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Orders"
+WHERE order_id = @p0;
+2025-11-01 17:16:21.883 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.884 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 17:16:21.884 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.884 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:16:21.888 +00:00 [DBG] An entity of type 'Order' tracked by 'CarsTradeDbContext' changed state from '"Deleted"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:16:21.888 +00:00 [DBG] SaveChanges completed for 'CarsTradeDbContext' with 1 entities written to the database.
+2025-11-01 17:16:21.888 +00:00 [INF] Заказ успешно удален с ID: "68bf81cb-35d8-42db-8b27-7a59619e2d44"
+2025-11-01 17:16:21.892 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.892 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.892 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:16:21.893 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:16:21.893 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:16:21.893 +00:00 [DBG] Executing DbCommand [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "IdempotencyRequests" AS i
+    WHERE i."Key" = @__key_0)
+2025-11-01 17:16:21.894 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "IdempotencyRequests" AS i
+    WHERE i."Key" = @__key_0)
+2025-11-01 17:16:21.895 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.895 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 17:16:21.895 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.895 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:16:21.896 +00:00 [DBG] Context 'CarsTradeDbContext' started tracking 'IdempotencyRequest' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:16:21.896 +00:00 [DBG] SaveChanges starting for 'CarsTradeDbContext'.
+2025-11-01 17:16:21.897 +00:00 [DBG] DetectChanges starting for 'CarsTradeDbContext'.
+2025-11-01 17:16:21.897 +00:00 [DBG] DetectChanges completed for 'CarsTradeDbContext'.
+2025-11-01 17:16:21.898 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.898 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.899 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-01 17:16:21.899 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:16:21.899 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-11-01 17:16:21.900 +00:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Guid), @p4='?', @p5='?', @p6='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "IdempotencyRequests" ("Id", "CreatedAt", "Key", "ResourceId", "ResourceType", "Responsejson", "Status")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-11-01 17:16:21.903 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Guid), @p4='?', @p5='?', @p6='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "IdempotencyRequests" ("Id", "CreatedAt", "Key", "ResourceId", "ResourceType", "Responsejson", "Status")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-11-01 17:16:21.903 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.903 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-11-01 17:16:21.904 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:21.904 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:16:21.904 +00:00 [DBG] An entity of type 'IdempotencyRequest' tracked by 'CarsTradeDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-01 17:16:21.905 +00:00 [DBG] SaveChanges completed for 'CarsTradeDbContext' with 1 entities written to the database.
+2025-11-01 17:16:21.905 +00:00 [INF] IdempotencyRequest saved for key: 12432122341234
+2025-11-01 17:16:21.974 +00:00 [DBG] Declare exchange: name: Contracts.Events:OrderDeleted, type: fanout, durable
+2025-11-01 17:16:22.019 +00:00 [DBG] SEND "rabbitmq://carstradeapi_rabbitmq/Contracts.Events:OrderDeleted" "6c010000-87c0-aa92-d122-08de196a6119" Contracts.Events.OrderDeleted
+2025-11-01 17:16:22.022 +00:00 [INF] Заказ с ID: "68bf81cb-35d8-42db-8b27-7a59619e2d44" успешно удален
+2025-11-01 17:16:22.022 +00:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-01 17:16:22.023 +00:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-11-01 17:16:22.023 +00:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-11-01 17:16:22.023 +00:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-01 17:16:22.024 +00:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-01 17:16:22.024 +00:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-01 17:16:22.024 +00:00 [INF] Executing OkObjectResult, writing value of type 'CarsTradeAPI.Features.OrdersOperation.OrdersDto.ShowOrderDto'.
+2025-11-01 17:16:22.025 +00:00 [INF] Executed action CarsTradeAPI.Features.OrdersOperation.OrdersController.DeleteOrder (CarsTradeAPI) in 214.793ms
+2025-11-01 17:16:22.025 +00:00 [INF] Executed endpoint 'CarsTradeAPI.Features.OrdersOperation.OrdersController.DeleteOrder (CarsTradeAPI)'
+2025-11-01 17:16:22.025 +00:00 [DBG] 'CarsTradeDbContext' disposed.
+2025-11-01 17:16:22.025 +00:00 [DBG] Disposing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-11-01 17:16:22.026 +00:00 [DBG] Disposed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-11-01 17:16:22.026 +00:00 [INF] Request finished HTTP/2 DELETE https://localhost:8081/api/Orders/DeleteOrder/68bf81cb-35d8-42db-8b27-7a59619e2d44 - 200 null application/json; charset=utf-8 226.8305ms
+2025-11-01 17:17:09.496 +00:00 [INF] Usage Telemetry: {"id":"6c010000-87c0-aa92-8033-08de1969ca88","created":"2025-11-01T17:12:09.3393508\u002B00:00","host":{"framework_version":"8.0.21","mass_transit_version":"8.5.4.0","operating_system_version":"Unix 6.6.87.1","time_zone_info":"(UTC) Coordinated Universal Time","commit_hash":"6803ed9a0bef6af09209848e01ded7e7663b82a6","container":"Docker"},"bus":[{"created":"2025-11-01T17:12:09.3406781\u002B00:00","configured":"2025-11-01T17:12:09.3803272\u002B00:00","started":"2025-11-01T17:12:09.4956161\u002B00:00","name":"IBus","endpoints":[{"name":"_bus_","type":"RabbitMQ","prefetch_count":32}]}]}
+2025-11-01 17:18:32.518 +00:00 [DBG] Connection id "0HNGPD75EVCJK" is closing.
+2025-11-01 17:18:32.518 +00:00 [DBG] Connection id "0HNGPD75EVCJK" is closed. The last processed stream ID was 27.
+2025-11-01 17:18:32.519 +00:00 [DBG] Connection id "0HNGPD75EVCJK" received FIN.
+2025-11-01 17:18:32.520 +00:00 [DBG] Connection id "0HNGPD75EVCJK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-01 17:18:32.520 +00:00 [DBG] The connection queue processing loop for 0HNGPD75EVCJK completed.
+2025-11-01 17:18:32.522 +00:00 [DBG] Connection id "0HNGPD75EVCJK" stopped.

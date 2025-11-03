@@ -1,0 +1,158 @@
+2025-10-19 12:55:21.019 +00:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-10-19 12:55:21.660 +00:00 [DBG] Entity Framework Core 8.0.7 initialized 'CarsTradeDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553' with options: None
+2025-10-19 12:55:21.669 +00:00 [DBG] Creating DbConnection.
+2025-10-19 12:55:21.672 +00:00 [DBG] Created DbConnection. (2ms).
+2025-10-19 12:55:21.682 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:21.716 +00:00 [DBG] 'CarsTradeDbContext' disposed.
+2025-10-19 12:55:21.718 +00:00 [DBG] Disposing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:21.721 +00:00 [DBG] Disposed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-10-19 12:55:21.796 +00:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-19 12:55:21.865 +00:00 [DBG] Hosting starting
+2025-10-19 12:55:21.909 +00:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2025-10-19 12:55:21.909 +00:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2025-10-19 12:55:21.920 +00:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2025-10-19 12:55:21.920 +00:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2025-10-19 12:55:21.922 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:21.923 +00:00 [INF] Creating key {23d9a5c3-9e89-4f83-bcc4-688d8cb47467} with creation date 2025-10-19 12:55:21Z, activation date 2025-10-19 12:55:21Z, and expiration date 2026-01-17 12:55:21Z.
+2025-10-19 12:55:21.925 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:21.931 +00:00 [DBG] Descriptor deserializer type for key {23d9a5c3-9e89-4f83-bcc4-688d8cb47467} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2025-10-19 12:55:21.931 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (5ms).
+2025-10-19 12:55:21.935 +00:00 [DBG] No key escrow sink found. Not writing key {23d9a5c3-9e89-4f83-bcc4-688d8cb47467} to escrow.
+2025-10-19 12:55:21.936 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-10-19 12:55:21.936 +00:00 [WRN] No XML encryptor configured. Key {23d9a5c3-9e89-4f83-bcc4-688d8cb47467} may be persisted to storage in unencrypted form.
+2025-10-19 12:55:21.936 +00:00 [DBG] Creating DbConnection.
+2025-10-19 12:55:21.937 +00:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2025-10-19 12:55:21.937 +00:00 [DBG] Created DbConnection. (0ms).
+2025-10-19 12:55:21.938 +00:00 [DBG] Found key {23d9a5c3-9e89-4f83-bcc4-688d8cb47467}.
+2025-10-19 12:55:21.942 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (4ms).
+2025-10-19 12:55:21.943 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (7ms).
+2025-10-19 12:55:21.944 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:21.947 +00:00 [DBG] Considering key {23d9a5c3-9e89-4f83-bcc4-688d8cb47467} with expiration date 2026-01-17 12:55:21Z as default key.
+2025-10-19 12:55:21.989 +00:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-19 12:55:21.992 +00:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-10-19 12:55:21.992 +00:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-10-19 12:55:21.994 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:21.994 +00:00 [DBG] Using key {23d9a5c3-9e89-4f83-bcc4-688d8cb47467} as the default key.
+2025-10-19 12:55:21.995 +00:00 [DBG] Key ring with default key {23d9a5c3-9e89-4f83-bcc4-688d8cb47467} was loaded during application startup.
+2025-10-19 12:55:22.012 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-10-19 12:55:22.118 +00:00 [INF] Executed DbCommand (118ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-10-19 12:55:22.119 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.121 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (1ms).
+2025-10-19 12:55:22.130 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.130 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.130 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-10-19 12:55:22.131 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-10-19 12:55:22.131 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-10-19 12:55:22.132 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-10-19 12:55:22.139 +00:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-10-19 12:55:22.145 +00:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 2AE5B9E8B7B0EDFD86FD709A56EA7C92E2569E52)
+2025-10-19 12:55:22.146 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.147 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 6ms reading results.
+2025-10-19 12:55:22.147 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.148 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-10-19 12:55:22.150 +00:00 [DBG] Migrating using database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.150 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.158 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.159 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.159 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-10-19 12:55:22.160 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-10-19 12:55:22.160 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-10-19 12:55:22.160 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-10-19 12:55:22.160 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.161 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.161 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-10-19 12:55:22.164 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-10-19 12:55:22.165 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.165 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-10-19 12:55:22.166 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.196 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.196 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.197 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-10-19 12:55:22.200 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-10-19 12:55:22.200 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-10-19 12:55:22.200 +00:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-10-19 12:55:22.200 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.201 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.201 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-10-19 12:55:22.244 +00:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-10-19 12:55:22.245 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.245 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-10-19 12:55:22.245 +00:00 [DBG] Opening connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.246 +00:00 [DBG] Opened connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.246 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-10-19 12:55:22.246 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-10-19 12:55:22.247 +00:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-10-19 12:55:22.247 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-10-19 12:55:22.249 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-10-19 12:55:22.249 +00:00 [DBG] Closing data reader to 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.250 +00:00 [DBG] A data reader for 'CarsTrade' on server 'tcp://carstradeapi_database:5432' is being disposed after spending 0ms reading results.
+2025-10-19 12:55:22.250 +00:00 [DBG] Closing connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432'.
+2025-10-19 12:55:22.250 +00:00 [DBG] Closed connection to database 'CarsTrade' on server 'tcp://carstradeapi_database:5432' (0ms).
+2025-10-19 12:55:22.257 +00:00 [INF] No migrations were applied. The database is already up to date.
+2025-10-19 12:55:22.462 +00:00 [INF] Now listening on: http://[::]:8080
+2025-10-19 12:55:22.462 +00:00 [INF] Now listening on: https://[::]:8081
+2025-10-19 12:55:22.463 +00:00 [DBG] Loaded hosting startup assembly CarsTradeAPI
+2025-10-19 12:55:22.463 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-19 12:55:22.464 +00:00 [INF] Hosting environment: Development
+2025-10-19 12:55:22.464 +00:00 [INF] Content root path: /app
+2025-10-19 12:55:22.464 +00:00 [DBG] Hosting started
+2025-10-19 12:55:22.835 +00:00 [DBG] Connection id "0HNGF1R22NH06" accepted.
+2025-10-19 12:55:22.836 +00:00 [DBG] Connection id "0HNGF1R22NH06" started.
+2025-10-19 12:55:22.859 +00:00 [DBG] Connection 0HNGF1R22NH06 established using the following protocol: "Tls13"
+2025-10-19 12:55:22.912 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/swagger/index.html - null null
+2025-10-19 12:55:22.913 +00:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-19 12:55:22.929 +00:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-19 12:55:22.929 +00:00 [DBG] Request did not match any endpoints
+2025-10-19 12:55:23.065 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/swagger/index.html - 200 null text/html;charset=utf-8 153.1772ms
+2025-10-19 12:55:23.266 +00:00 [INF] Request starting HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - null null
+2025-10-19 12:55:23.266 +00:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-19 12:55:23.266 +00:00 [DBG] Request did not match any endpoints
+2025-10-19 12:55:23.434 +00:00 [INF] Request finished HTTP/2 GET https://localhost:8081/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 168.5352ms
