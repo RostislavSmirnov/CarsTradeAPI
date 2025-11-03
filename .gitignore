@@ -63,3 +63,8 @@ container_data/
 # Logs
 *.log
 logs/
+Logs/
+*/Logs/*
+CarsTradeApiLogs/
+CarsTradeApiLogs/*
+
